@@ -1,0 +1,53 @@
+﻿/* 전역 리셋 & 강제 라이트 배경 */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+body {
+  background: #fff;          /* Vite 다크모드 덮어쓰기 */
+  color: #111;
+}
+
+/* 레이아웃: 뷰포트 꽉 채우기 */
+.layout {
+  display: flex;
+  width: 100vw;         
+  min-height: 100vh;
+  background: #fff;
+}
+
+/* 본문 */
+.content {
+  flex: 1;
+  margin-left: 220px; /* 사이드바 너비만큼 왼쪽 여백 */
+  padding: 48px 56px;
+  box-sizing: border-box;
+  background: #fff;    
+}
+
+/* 섹션 */
+.section {
+  max-width: 1200px;
+  margin: 0 auto 96px auto;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #eee;
+}
+.section h2 { font-size: 28px; margin-bottom: 12px; }
+
+/* 모바일 */
+@media (max-width: 860px) {
+  .layout { 
+    flex-direction: column;
+  }
+  .content { 
+    margin-left: 0;
+    padding: 24px 20px;
+    margin-top: 60px; /* 모바일 헤더 높이만큼 여백 */
+  }
+}
+
+/* 부드러운 스크롤 */
+html {
+  scroll-behavior: smooth;
+}
