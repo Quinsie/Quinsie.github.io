@@ -5,6 +5,7 @@ const content = {
     title: "Publications",
     subtitle: "A Distributed Drone Weather System using LoRaWAN and LoRa Meshnet",
     venue: "IEEE RoboticCC 2025",
+    linkLabel: "IEEE Xplore",
     bullets: [
       "메쉬 네트워크 충돌 방지를 위한 Polling 기반 통신 프로토콜 설계 및 구현",
       "DFS 기반 Spanning Tree 토폴로지로 안정적인 Token Handover 알고리즘 개발",
@@ -17,6 +18,7 @@ const content = {
     title: "Publications",
     subtitle: "A Distributed Drone Weather System using LoRaWAN and LoRa Meshnet",
     venue: "IEEE RoboticCC 2025",
+    linkLabel: "IEEE Xplore",
     bullets: [
       "Implemented a polling-based protocol to prevent collisions in mesh communication",
       "Developed a DFS-based spanning-tree topology for stable token handover",
@@ -42,6 +44,15 @@ export default function Research({ language }) {
               <li key={item}>{item}</li>
             ))}
           </ul>
+          <div className="cv-link-row">
+            <a
+              href="https://ieeexplore.ieee.org/document/11392049/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t.linkLabel}
+            </a>
+          </div>
         </article>
       </div>
     </section>
