@@ -57,7 +57,7 @@ body {
   max-width: 1200px;
   margin: 0 auto 34px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 2px solid #d1d5db;
 }
 
 #education {
@@ -137,6 +137,30 @@ body {
   color: #111827;
 }
 
+.cv-table {
+  border-top: 2px solid #9ca3af;
+}
+
+.cv-table-row {
+  display: grid;
+  grid-template-columns: 1.1fr 1.5fr 1.5fr 1.2fr;
+  gap: 10px;
+  padding: 10px 4px;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 0.95rem;
+  color: #1f2937;
+}
+
+.cv-table-head {
+  font-weight: 700;
+  border-bottom: 2px solid #9ca3af;
+  color: #111827;
+}
+
+.cv-cell-label {
+  display: none;
+}
+
 @media (max-width: 860px) {
   .layout {
     flex-direction: column;
@@ -155,6 +179,22 @@ body {
 
   .lang-switch {
     margin-bottom: 14px;
+  }
+
+  .cv-table-row {
+    grid-template-columns: 1fr;
+    gap: 4px;
+    padding: 8px 2px;
+  }
+
+  .cv-table-head {
+    display: none;
+  }
+
+  .cv-cell-label {
+    display: inline;
+    font-weight: 600;
+    color: #374151;
   }
 }
 

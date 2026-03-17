@@ -3,18 +3,20 @@
 const content = {
   kor: {
     title: "License and Certificate",
-    items: [
-      "2025.11  TOPCIT  Level 3 (594/1000)  정보통신기획평가원",
-      "2025.03  OPIc  IH (Intermediate High)  ACTFL",
-      "2022.07  Cos PRO C++  1급  YBM IT",
+    columns: ["일자", "자격/시험", "등급/점수", "기관"],
+    rows: [
+      ["2025.11", "TOPCIT", "Level 3 (594/1000)", "정보통신기획평가원"],
+      ["2025.03", "OPIc", "IH (Intermediate High)", "ACTFL"],
+      ["2022.07", "Cos PRO C++", "1급", "YBM IT"],
     ],
   },
   eng: {
     title: "License and Certificate",
-    items: [
-      "Nov 2025  TOPCIT  Level 3 (594/1000)  IITP",
-      "Mar 2025  OPIc  IH (Intermediate High)  ACTFL",
-      "Jul 2022  Cos PRO C++  Professional (Level 1)  YBM IT",
+    columns: ["Date", "Certificate", "Level / Score", "Organization"],
+    rows: [
+      ["Nov 2025", "TOPCIT", "Level 3 (594/1000)", "IITP"],
+      ["Mar 2025", "OPIc", "IH (Intermediate High)", "ACTFL"],
+      ["Jul 2022", "Cos PRO C++", "Professional (Level 1)", "YBM IT"],
     ],
   },
 };
@@ -27,11 +29,23 @@ export default function Skills({ language }) {
       <h2>{t.title}</h2>
       <div className="cv-grid">
         <article className="cv-card">
-          <ul className="cv-list">
-            {t.items.map((item) => (
-              <li key={item}>{item}</li>
+          <div className="cv-table">
+            <div className="cv-table-row cv-table-head">
+              {t.columns.map((col) => (
+                <div key={col}>{col}</div>
+              ))}
+            </div>
+            {t.rows.map((row) => (
+              <div className="cv-table-row" key={row.join("-")}>
+                {row.map((cell, index) => (
+                  <div key={cell}>
+                    <span className="cv-cell-label">{t.columns[index]}: </span>
+                    {cell}
+                  </div>
+                ))}
+              </div>
             ))}
-          </ul>
+          </div>
         </article>
       </div>
     </section>
