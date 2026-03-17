@@ -35,6 +35,78 @@ body {
 }
 .section h2 { font-size: 28px; margin-bottom: 12px; }
 
+.cv-section h2 {
+  margin-bottom: 20px;
+}
+
+.cv-intro {
+  margin: 0 0 18px 0;
+  color: #475569;
+  font-size: 1rem;
+}
+
+.cv-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.cv-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 18px;
+  background: #fff;
+}
+
+.cv-card h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.15rem;
+  color: #0f172a;
+}
+
+.cv-subtitle {
+  margin: 0 0 10px 0;
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
+.cv-meta {
+  margin: 0 0 10px 0;
+  color: #334155;
+  font-size: 0.92rem;
+}
+
+.cv-list {
+  margin: 8px 0 0 18px;
+  padding: 0;
+  color: #1f2937;
+}
+
+.cv-list li {
+  margin-bottom: 6px;
+  line-height: 1.55;
+}
+
+.cv-link-row {
+  margin-top: 8px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.cv-link-row a {
+  color: #0f766e;
+}
+
+.cv-contact {
+  display: grid;
+  gap: 8px;
+  font-size: 1rem;
+}
+
+.cv-contact strong {
+  color: #0f172a;
+}
+
 /* 모바일 */
 @media (max-width: 860px) {
   .layout { 
@@ -44,6 +116,10 @@ body {
     margin-left: 0;
     padding: 24px 20px;
     margin-top: 60px; /* 모바일 헤더 높이만큼 여백 */
+  }
+
+  .cv-card {
+    padding: 14px;
   }
 }
 
