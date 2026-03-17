@@ -1,26 +1,26 @@
-﻿import { useState, useEffect } from "react";
+﻿import { useEffect, useMemo, useState } from "react";
 import "./Sidebar.css";
 
-const sectionIds = ["home", "education", "projects", "research", "experience", "skills", "contact"];
+const sectionOrder = ["home", "contact", "research", "projects", "experience", "skills", "education"];
 
 const labels = {
   kor: {
-    home: "홈",
-    education: "학력",
-    projects: "프로젝트",
-    research: "연구",
-    experience: "경험",
-    skills: "기술",
-    contact: "연락처",
+    home: "Home",
+    contact: "Contact",
+    research: "Publications",
+    projects: "Projects",
+    experience: "Experience",
+    skills: "License & Certificate",
+    education: "Education",
   },
   eng: {
     home: "Home",
-    education: "Education",
-    projects: "Projects",
-    research: "Research",
-    experience: "Experience",
-    skills: "Skills",
     contact: "Contact",
+    research: "Publications",
+    projects: "Projects",
+    experience: "Experience",
+    skills: "License & Certificate",
+    education: "Education",
   },
 };
 
@@ -28,21 +28,31 @@ export default function Sidebar({ language }) {
   const [activeSection, setActiveSection] = useState("home");
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  const items = sectionIds.map((id) => ({ id, label: labels[language][id] }));
+  const items = useMemo(
+    () => sectionOrder.map((id) => ({ id, label: labels[language][id] })),
+    [language],
+  );
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = sectionIds.map((id) => document.getElementById(id));
-      const scrollPosition = window.scrollY + 100;
+      const lastId = sectionOrder[sectionOrder.length - 1];
+      const atBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4;
 
-      for (let i = sections.length - 1; i >= 0; i -= 1) {
-        if (sections[i] && sections[i].offsetTop <= scrollPosition) {
-          setActiveSection(sectionIds[i]);
-          break;
-        }
+      if (atBottom) {
+        setActiveSection(lastId);
+        return;
       }
+
+      const current = sectionOrder.findLast((id) => {
+        const el = document.getElementById(id);
+        if (!el) return false;
+        return el.getBoundingClientRect().top <= 120;
+      });
+
+      setActiveSection(current || "home");
     };
 
+    handleScroll();
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -52,22 +62,18 @@ export default function Sidebar({ language }) {
     if (!targetElement) return;
 
     const startPosition = window.pageYOffset;
-    const targetPosition = targetElement.offsetTop - 80;
+    const targetPosition = targetElement.offsetTop - 76;
     const distance = targetPosition - startPosition;
-    const duration = 500;
+    const duration = 420;
     let start = null;
 
     const animation = (currentTime) => {
       if (start === null) start = currentTime;
       const timeElapsed = currentTime - start;
       const progress = Math.min(timeElapsed / duration, 1);
-      const easedProgress = progress < 0.5 ? 4 * progress * progress * progress : 1 - ((-2 * progress + 2) ** 3) / 2;
-
-      window.scrollTo(0, startPosition + distance * easedProgress);
-
-      if (progress < 1) {
-        requestAnimationFrame(animation);
-      }
+      const eased = progress < 0.5 ? 4 * progress * progress * progress : 1 - ((-2 * progress + 2) ** 3) / 2;
+      window.scrollTo(0, startPosition + distance * eased);
+      if (progress < 1) requestAnimationFrame(animation);
     };
 
     requestAnimationFrame(animation);
@@ -87,9 +93,7 @@ export default function Sidebar({ language }) {
           <span></span>
           <span></span>
         </button>
-        <button className="home-btn" onClick={(e) => handleNavClick(e, "home")}>
-          {labels[language].home}
-        </button>
+        <button className="home-btn" onClick={(e) => handleNavClick(e, "home")}>{labels[language].home}</button>
       </div>
 
       <aside className="sidebar">

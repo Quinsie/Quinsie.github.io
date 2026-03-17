@@ -9,7 +9,7 @@ const content = {
     role: "AI Engineer (Research-Oriented)",
     summary:
       "일상의 불편함을 포착해 기술로 해결하며, 문제의 본질을 파고드는 몰입을 즐깁니다. 새로운 배움을 성장의 동력으로 삼아, 막연한 기술을 우리 삶에 밀착된 유용한 가치로 바꿉니다.",
-    contactLabel: "연락",
+    contactLabel: "Contact",
     email: "hoyyang22@jbnu.ac.kr",
     phone: "010-2791-0501",
     birth: "2000.04.29",
@@ -34,7 +34,9 @@ export default function Home({ language }) {
         <img src={profileImg} alt="Jiho Pyo" className="profile-image" />
 
         <div className="home-text">
-          <h1>표지호 <span>Jiho Pyo</span></h1>
+          <h1>
+            표지호 <span>Jiho Pyo</span>
+          </h1>
           <p className="role">{t.role}</p>
           <p className="summary">{t.summary}</p>
 

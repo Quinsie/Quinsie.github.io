@@ -2,34 +2,32 @@
 
 const content = {
   kor: {
-    title: "프로젝트",
-    intro: "주요 프로젝트 2건의 목적, 구현, 성과를 정리했습니다.",
+    title: "Projects",
     saeroTitle: "새로버스 - BIS 개선 프로젝트",
     saeroMeta: "개인 프로젝트 | 2025.03 - 2025.06",
     saeroStack: "Pytorch (MLP), FastAPI, Python, Kotlin/XML",
     saeroBullets: [
-      "기존 BIS 도착 예측 오차를 줄이기 위한 데이터 기반 예측 시스템 개발",
-      "시간/요일/날씨/버스정보/위치/교통정보 feature를 이용한 MLP 모델 설계",
-      "전주시 451개 노선 실시간 데이터 수집 자동화 파이프라인 구축",
-      "Heteroscedastic Loss와 Ranking Loss를 적용해 예측 안정성 개선",
-      "FastAPI 기반 추론 API와 Android 앱까지 구현",
+      "기존 BIS 도착 예상 오차를 줄이기 위한 데이터 기반 도착 예측 시스템 개발",
+      "시간, 요일, 날씨, 버스정보, 위치, 교통정보를 feature로 활용한 MLP 모델 설계",
+      "전주시 451개 노선 실시간 도착정보 수집 자동화 파이프라인 구축",
+      "Heteroscedastic Loss와 Ranking Loss를 적용해 모델 안정성/타당성 강화",
+      "FastAPI 기반 저지연 추론 API 및 Android 앱 구현",
     ],
-    saeroLinkText: "프로젝트 문서 보기",
+    saeroLinkText: "Docs",
     doqTitle: "DoQMate - 문서 기반 AI 챗봇 시스템",
     doqMeta: "팀 프로젝트 (캡스톤) | 2025.09 - 2025.12",
     doqStack: "Qwen, Qwen-VL, EasyOCR, Flask, ChromaDB",
     doqBullets: [
-      "PDF 중심 비정형 문서 탐색을 위한 로컬 RAG 파이프라인 구축",
-      "EasyOCR 파인튜닝과 LLM 정제 단계를 통해 OCR 품질 향상",
-      "문장 단위 재구성과 유사도 검색 최적화로 환각 억제형 응답 설계",
-      "검색 신뢰도 낮을 때 답변 거부 정책을 적용해 보안성 강화",
-      "멀티 챗봇/문서 관리가 가능한 프론트 UI 구성",
+      "PDF 중심 비정형 데이터 탐색을 위한 보안 특화 로컬 RAG 시스템 구축",
+      "EasyOCR 파인튜닝 및 LLM 기반 정제 단계 도입으로 OCR 정확도 개선",
+      "문장 단위 재구성과 검색 최적화로 환각을 억제한 문서 기반 응답 구현",
+      "검색 신뢰도가 낮은 경우 답변을 거부하도록 설계해 보안성 강화",
+      "복수 챗봇/문서 관리를 포함한 프론트엔드 UI 구성",
     ],
-    doqLinkText: "GitHub 저장소 보기",
+    doqLinkText: "Github",
   },
   eng: {
     title: "Projects",
-    intro: "Two major projects with implementation details and outcomes.",
     saeroTitle: "Saero Bus - BIS Improvement Project",
     saeroMeta: "Personal Project | Mar 2025 - Jun 2025",
     saeroStack: "Pytorch (MLP), FastAPI, Python, Kotlin/XML",
@@ -40,7 +38,7 @@ const content = {
       "Applied heteroscedastic loss and ranking loss for robustness and monotonicity",
       "Implemented FastAPI inference APIs and Android application",
     ],
-    saeroLinkText: "View Project Docs",
+    saeroLinkText: "Docs",
     doqTitle: "DoQMate - Document-Based AI Chatbot System",
     doqMeta: "Team Project (Capstone) | Sep 2025 - Dec 2025",
     doqStack: "Qwen, Qwen-VL, EasyOCR, Flask, ChromaDB",
@@ -51,7 +49,7 @@ const content = {
       "Applied confidence-based rejection policy for stronger document-grounded responses",
       "Implemented frontend UI for multi-chatbot and document management",
     ],
-    doqLinkText: "View GitHub Repository",
+    doqLinkText: "Github",
   },
 };
 
@@ -61,7 +59,6 @@ export default function Projects({ language }) {
   return (
     <section id="projects" className="section cv-section">
       <h2>{t.title}</h2>
-      <p className="cv-intro">{t.intro}</p>
 
       <div className="cv-grid">
         <article className="cv-card">

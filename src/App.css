@@ -21,7 +21,7 @@ body {
 .content {
   flex: 1;
   margin-left: 220px;
-  padding: 22px 36px 40px;
+  padding: 22px 36px 140px;
   box-sizing: border-box;
   background: #fff;
 }
@@ -30,7 +30,6 @@ body {
   max-width: 1200px;
   margin: 0 auto 20px;
   display: flex;
-  gap: 0;
   border: 1px solid #d1d5db;
   width: fit-content;
 }
@@ -65,12 +64,6 @@ body {
   font-size: 1.7rem;
   margin: 0 0 10px;
   color: #111827;
-}
-
-.cv-intro {
-  margin: 0 0 10px;
-  color: #4b5563;
-  font-size: 0.98rem;
 }
 
 .cv-grid {
@@ -146,7 +139,7 @@ body {
 
   .content {
     margin-left: 0;
-    padding: 16px 16px 30px;
+    padding: 16px 16px 120px;
     margin-top: 60px;
   }
 
