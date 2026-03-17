@@ -7,8 +7,10 @@ import instagramLogo from "../assets/instagram_logo.png";
 const content = {
   kor: {
     role: "AI Engineer (Research-Oriented)",
-    summary:
-      "일상의 불편함을 포착해 기술로 해결하며, 문제의 본질을 파고드는 몰입을 즐깁니다. 새로운 배움을 성장의 동력으로 삼아, 막연한 기술을 우리 삶에 밀착된 유용한 가치로 바꿉니다.",
+    summaryLines: [
+      "일상의 불편함을 포착해 기술로 해결하며, 문제의 본질을 파고드는 몰입을 즐깁니다.",
+      "새로운 배움을 성장의 동력으로 삼아, 막연한 기술을 우리 삶에 밀착된 유용한 가치로 바꿉니다.",
+    ],
     contactLabel: "Contact",
     email: "hoyyang22@jbnu.ac.kr",
     phone: "010-2791-0501",
@@ -16,8 +18,10 @@ const content = {
   },
   eng: {
     role: "AI Engineer (Research-Oriented)",
-    summary:
-      "I enjoy identifying everyday problems and uncovering their core, transforming abstract technologies into practical value through continuous learning.",
+    summaryLines: [
+      "I enjoy identifying everyday problems and uncovering their core,",
+      "transforming abstract technologies into practical value through continuous learning.",
+    ],
     contactLabel: "Contact",
     email: "hoyyang22@jbnu.ac.kr",
     phone: "+82 10-2791-0501",
@@ -38,7 +42,13 @@ export default function Home({ language }) {
             표지호 <span>Jiho Pyo</span>
           </h1>
           <p className="role">{t.role}</p>
-          <p className="summary">{t.summary}</p>
+          <div className="summary">
+            {t.summaryLines.map((line) => (
+              <p className="summary-line" key={line}>
+                {line}
+              </p>
+            ))}
+          </div>
 
           <p className="contact-line">
             <strong>{t.contactLabel}.</strong> Email. {t.email} | Phone. {t.phone} | Birth. {t.birth}

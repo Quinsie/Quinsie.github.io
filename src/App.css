@@ -24,6 +24,7 @@ body {
   padding: 22px 36px 140px;
   box-sizing: border-box;
   background: #fff;
+  text-align: left;
 }
 
 .lang-switch {
@@ -58,6 +59,7 @@ body {
   margin: 0 auto 34px;
   padding-bottom: 20px;
   border-bottom: 2px solid #d1d5db;
+  text-align: left;
 }
 
 #education {
@@ -137,6 +139,11 @@ body {
   color: #111827;
 }
 
+.scroll-end-spacer {
+  height: calc(100vh - 120px);
+  min-height: 320px;
+}
+
 .cv-table {
   border-top: 2px solid #9ca3af;
 }
@@ -195,6 +202,11 @@ body {
     display: inline;
     font-weight: 600;
     color: #374151;
+  }
+
+  .scroll-end-spacer {
+    height: calc(100vh - 96px);
+    min-height: 240px;
   }
 }
 

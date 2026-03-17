@@ -29,6 +29,7 @@ export default function App() {
         <Experience language={language} />
         <Skills language={language} />
         <Education language={language} />
+        <div className="scroll-end-spacer" aria-hidden="true"></div>
       </main>
     </div>
   );

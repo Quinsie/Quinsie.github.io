@@ -34,27 +34,46 @@ export default function Sidebar({ language }) {
   );
 
   useEffect(() => {
+    const getTopOffset = () => (window.innerWidth <= 860 ? 72 : 12);
+
     const handleScroll = () => {
-      const current = sectionOrder.findLast((id) => {
+      const offset = getTopOffset();
+      let bestId = "home";
+      let bestDistance = Number.POSITIVE_INFINITY;
+
+      sectionOrder.forEach((id) => {
         const el = document.getElementById(id);
-        if (!el) return false;
-        return el.getBoundingClientRect().top <= window.innerHeight * 0.35;
+        if (!el) return;
+
+        const rect = el.getBoundingClientRect();
+        if (rect.bottom <= offset) return;
+
+        const distance = Math.abs(rect.top - offset);
+        if (distance < bestDistance) {
+          bestDistance = distance;
+          bestId = id;
+        }
       });
 
-      setActiveSection(current || "home");
+      setActiveSection(bestId);
     };
 
     handleScroll();
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleScroll);
+    };
   }, []);
 
   const smoothScrollTo = (targetId) => {
     const targetElement = document.getElementById(targetId);
     if (!targetElement) return;
 
+    const topOffset = window.innerWidth <= 860 ? 72 : 12;
     const startPosition = window.pageYOffset;
-    const targetPosition = targetElement.offsetTop - 76;
+    const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - topOffset;
     const distance = targetPosition - startPosition;
     const duration = 420;
     let start = null;
@@ -73,6 +92,7 @@ export default function Sidebar({ language }) {
 
   const handleNavClick = (e, sectionId) => {
     e.preventDefault();
+    setActiveSection(sectionId);
     smoothScrollTo(sectionId);
     setIsMobileMenuOpen(false);
   };
