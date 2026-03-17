@@ -150,10 +150,6 @@
     display: flex;
   }
 
-  .mobile-sidebar {
-    display: block;
-  }
-
   .content {
     margin-top: 60px;
   }
