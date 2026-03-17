@@ -35,18 +35,10 @@ export default function Sidebar({ language }) {
 
   useEffect(() => {
     const handleScroll = () => {
-      const lastId = sectionOrder[sectionOrder.length - 1];
-      const atBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4;
-
-      if (atBottom) {
-        setActiveSection(lastId);
-        return;
-      }
-
       const current = sectionOrder.findLast((id) => {
         const el = document.getElementById(id);
         if (!el) return false;
-        return el.getBoundingClientRect().top <= 120;
+        return el.getBoundingClientRect().top <= window.innerHeight * 0.35;
       });
 
       setActiveSection(current || "home");

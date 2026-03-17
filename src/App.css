@@ -60,6 +60,11 @@ body {
   border-bottom: 1px solid #e5e7eb;
 }
 
+#education {
+  margin-bottom: 70px;
+  padding-bottom: 34px;
+}
+
 .section h2 {
   font-size: 1.7rem;
   margin: 0 0 10px;
@@ -141,6 +146,11 @@ body {
     margin-left: 0;
     padding: 16px 16px 120px;
     margin-top: 60px;
+  }
+
+  #education {
+    margin-bottom: 56px;
+    padding-bottom: 28px;
   }
 
   .lang-switch {
