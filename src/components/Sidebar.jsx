@@ -38,24 +38,15 @@ export default function Sidebar({ language }) {
 
     const handleScroll = () => {
       const offset = getTopOffset();
-      let bestId = "home";
-      let bestDistance = Number.POSITIVE_INFINITY;
-
-      sectionOrder.forEach((id) => {
+      const current = sectionOrder.findLast((id) => {
         const el = document.getElementById(id);
-        if (!el) return;
+        if (!el) return false;
 
         const rect = el.getBoundingClientRect();
-        if (rect.bottom <= offset) return;
-
-        const distance = Math.abs(rect.top - offset);
-        if (distance < bestDistance) {
-          bestDistance = distance;
-          bestId = id;
-        }
+        return rect.top <= offset + 1;
       });
 
-      setActiveSection(bestId);
+      setActiveSection(current || "home");
     };
 
     handleScroll();
