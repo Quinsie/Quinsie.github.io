@@ -1,50 +1,27 @@
-﻿import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import "./Sidebar.css";
+import { getPortfolioContent, sectionOrder } from "../content/portfolio";
 
-const sectionOrder = ["home", "contact", "research", "projects", "experience", "skills", "education"];
-
-const labels = {
-  kor: {
-    home: "Home",
-    contact: "Contact",
-    research: "Publications",
-    projects: "Projects",
-    experience: "Experience",
-    skills: "License & Certificate",
-    education: "Education",
-  },
-  eng: {
-    home: "Home",
-    contact: "Contact",
-    research: "Publications",
-    projects: "Projects",
-    experience: "Experience",
-    skills: "License & Certificate",
-    education: "Education",
-  },
-};
+function getTopOffset() {
+  return window.innerWidth <= 860 ? 72 : 12;
+}
 
 export default function Sidebar({ language }) {
   const [activeSection, setActiveSection] = useState("home");
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  const items = useMemo(
-    () => sectionOrder.map((id) => ({ id, label: labels[language][id] })),
-    [language],
-  );
+  const { navigation } = getPortfolioContent(language);
+  const items = sectionOrder.map((id) => ({ id, label: navigation[id] }));
 
   useEffect(() => {
-    const getTopOffset = () => (window.innerWidth <= 860 ? 72 : 12);
-
     const handleScroll = () => {
       const offset = getTopOffset();
-      const current = sectionOrder.findLast((id) => {
-        const el = document.getElementById(id);
-        if (!el) return false;
-
-        const rect = el.getBoundingClientRect();
-        return rect.top <= offset + 1;
-      });
+      const current = [...sectionOrder]
+        .reverse()
+        .find((id) => {
+          const el = document.getElementById(id);
+          if (!el) return false;
+          return el.getBoundingClientRect().top <= offset + 1;
+        });
 
       setActiveSection(current || "home");
     };
@@ -52,6 +29,7 @@ export default function Sidebar({ language }) {
     handleScroll();
     window.addEventListener("scroll", handleScroll);
     window.addEventListener("resize", handleScroll);
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
       window.removeEventListener("resize", handleScroll);
@@ -62,9 +40,10 @@ export default function Sidebar({ language }) {
     const targetElement = document.getElementById(targetId);
     if (!targetElement) return;
 
-    const topOffset = window.innerWidth <= 860 ? 72 : 12;
+    const topOffset = getTopOffset();
     const startPosition = window.pageYOffset;
-    const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - topOffset;
+    const targetPosition =
+      targetElement.getBoundingClientRect().top + window.pageYOffset - topOffset;
     const distance = targetPosition - startPosition;
     const duration = 420;
     let start = null;
@@ -73,7 +52,11 @@ export default function Sidebar({ language }) {
       if (start === null) start = currentTime;
       const timeElapsed = currentTime - start;
       const progress = Math.min(timeElapsed / duration, 1);
-      const eased = progress < 0.5 ? 4 * progress * progress * progress : 1 - ((-2 * progress + 2) ** 3) / 2;
+      const eased =
+        progress < 0.5
+          ? 4 * progress * progress * progress
+          : 1 - ((-2 * progress + 2) ** 3) / 2;
+
       window.scrollTo(0, startPosition + distance * eased);
       if (progress < 1) requestAnimationFrame(animation);
     };
@@ -81,8 +64,8 @@ export default function Sidebar({ language }) {
     requestAnimationFrame(animation);
   };
 
-  const handleNavClick = (e, sectionId) => {
-    e.preventDefault();
+  const handleNavClick = (event, sectionId) => {
+    event.preventDefault();
     setActiveSection(sectionId);
     smoothScrollTo(sectionId);
     setIsMobileMenuOpen(false);
@@ -91,12 +74,22 @@ export default function Sidebar({ language }) {
   return (
     <>
       <div className="mobile-header">
-        <button className="hamburger-btn" onClick={() => setIsMobileMenuOpen((prev) => !prev)}>
+        <button
+          type="button"
+          className="hamburger-btn"
+          onClick={() => setIsMobileMenuOpen((prev) => !prev)}
+        >
           <span></span>
           <span></span>
           <span></span>
         </button>
-        <button className="home-btn" onClick={(e) => handleNavClick(e, "home")}>{labels[language].home}</button>
+        <button
+          type="button"
+          className="home-btn"
+          onClick={(event) => handleNavClick(event, "home")}
+        >
+          {navigation.home}
+        </button>
       </div>
 
       <aside className="sidebar">
@@ -106,7 +99,7 @@ export default function Sidebar({ language }) {
               key={item.id}
               className={`nav-item ${activeSection === item.id ? "active" : ""}`}
               href={`#${item.id}`}
-              onClick={(e) => handleNavClick(e, item.id)}
+              onClick={(event) => handleNavClick(event, item.id)}
             >
               {item.label}
             </a>
@@ -122,14 +115,17 @@ export default function Sidebar({ language }) {
                 key={item.id}
                 className={`mobile-nav-item ${activeSection === item.id ? "active" : ""}`}
                 href={`#${item.id}`}
-                onClick={(e) => handleNavClick(e, item.id)}
+                onClick={(event) => handleNavClick(event, item.id)}
               >
                 {item.label}
               </a>
             ))}
           </nav>
         </div>
-        <div className="mobile-overlay" onClick={() => setIsMobileMenuOpen(false)}></div>
+        <div
+          className="mobile-overlay"
+          onClick={() => setIsMobileMenuOpen(false)}
+        ></div>
       </div>
     </>
   );
