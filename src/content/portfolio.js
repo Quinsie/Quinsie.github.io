@@ -160,6 +160,16 @@ export const portfolioContent = {
         type: "cards",
         cards: [
           {
+            title: "Holysoft Studio",
+            meta: "학생 인턴 | 2026.01 - 2026.02",
+            bullets: [
+              "Unity 기반 게임 개발 프로세스 학습 및 프로젝트 참여",
+              "C# 스크립트를 활용한 게임 로직 구현 및 기능 개발 경험",
+              "게임 오브젝트 구조 및 이벤트 시스템 이해를 기반으로 간단한 인터랙션 구현",
+              "게임 개발 전반의 파이프라인(기획개발테스트) 실무 프로세스 경험",
+            ],
+          },
+          {
             title: "전북대학교 시각지능연구실",
             meta: "학부연구생 | 2025.03 - present",
             bullets: [
@@ -346,6 +356,16 @@ export const portfolioContent = {
         title: "Experience",
         type: "cards",
         cards: [
+          {
+            title: "Holysoft Studio",
+            meta: "Student Intern | Jan 2026 - Feb 2026",
+            bullets: [
+              "Learned Unity-based game development workflow and participated in development projects",
+              "Implemented game logic and features using C# scripting",
+              "Built simple interactive systems based on Unity's object and event architecture",
+              "Experienced the full game development pipeline from planning to testing",
+            ],
+          },
           {
             title: "JBNU Vision Intelligence Lab",
             meta: "Undergraduate Researcher | Mar 2025 - present",
