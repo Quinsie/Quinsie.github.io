@@ -110,7 +110,7 @@ export const portfolioContent = {
         cards: [
           {
             title: "E-Safe - KESCO 전기재해위험지도 관리시스템",
-            meta: "팀 프로젝트 | 2026.03 - present",
+            meta: "팀 프로젝트 | 2026.03 - Present",
             subtitle: "AI/ML, 데이터 분석",
             bullets: [
               "건물 정적 위험요소, 기상 위험, 설비 점검/검사 이력, 과거 화재 이력을 결합한 전기재해 위험도 산정 시스템 개발",
@@ -165,10 +165,35 @@ export const portfolioContent = {
         cards: [
           {
             title: "전북대학교 시각지능연구실",
-            meta: "학부연구생 | 2025.03 - present",
+            meta: "학부연구생 | 2025.03 - Present",
             bullets: [
               "Vision/AI 기반 연구 주제 실험 및 구현",
               "프로젝트 단위 모델 개발 및 성능 분석",
+            ],
+          },
+          {
+            title: "전북대학교 SW역량인증제 출제위원",
+            meta: "2026.03 - Present",
+            bullets: [
+              "교내 코딩테스트 문제 출제 및 검수 참여",
+            ],
+          },
+          {
+            title: "전북대학교 교과목 TA (수업조교)",
+            meta: "2025.03 - Present",
+            bullets: [
+              "이산수학 (2025.03 - 2025.06)",
+              "리눅스프로그래밍 (2025.09 - 2025.12)",
+              "데이터베이스 (2026.03 - Present)",
+              "교과목 운영 보조 및 실습/과제 지원, 학생 질의 응답 수행",
+            ],
+          },
+          {
+            title: "SW융합 멘토링 프로그램 알고리즘 멘토",
+            meta: "2025.09 - Present",
+            bullets: [
+              "재학생 대상 프로그래밍 기초, 자료구조 및 알고리즘 교육",
+              "2025학년도 2학기, 2026학년도 1학기 연속 수행",
             ],
           },
           {
@@ -203,21 +228,72 @@ export const portfolioContent = {
       activities: {
         title: "Activities",
         type: "cards",
-        cards: [],
+        cards: [
+          {
+            title: "STI West Negros University 문화교류 및 어학연수",
+            meta: "2026.01 - 2026.02",
+          },
+          {
+            title: "ICPC 2025",
+            meta: "2025.10",
+            bullets: [
+              "Online Competition 참가",
+              "교내 은상 수상",
+            ],
+          },
+          {
+            title: "ICPC 2022",
+            meta: "2022.10 - 2022.11",
+            bullets: [
+              "2022.10 Online Competition 참가 (6 solve)",
+              "교내 금상 수상 후 Seoul Regional 진출",
+              "2022.11 Seoul Regional 본선 참가 (4 solve, 54th / 71)",
+            ],
+          },
+          {
+            title: "COALA 알고리즘 동아리 부회장",
+            meta: "2021.12 - 2022.11",
+            bullets: [
+              "알고리즘 튜터링 및 개인 멘토링 진행",
+              "MT 기획 및 동아리 운영 활동 수행",
+            ],
+          },
+          {
+            title: "전북대학교 IT정보공학과 학생회 기획국",
+            meta: "2022.03 - 2022.11",
+            bullets: [
+              "학과 행사 기획 및 운영 참여",
+            ],
+          },
+          {
+            title: "공과대학 교육봉사 재능기부",
+            meta: "2022.07",
+            bullets: [
+              "전북대학교 사대부고 대상 수업 진행",
+            ],
+          },
+        ],
       },
       awards: {
         title: "Awards",
         type: "table",
         columns: ["일자", "수상명", "주관", "비고"],
-        rows: [],
+        rows: [
+          ["2025.10", "AWS METAmobility 자율주행 자동차 경진대회 해커톤 은상", "AWS METAmobility", ""],
+          ["2025.10", "전북대학교 교내 알고리즘 대회 은상", "전북대학교", "ICPC 2025"],
+          ["2025.05", "JBNUPC 9위 입상", "전북대학교", "전북대학교 프로그래밍 대회"],
+          ["2022.10", "전북대학교 교내 알고리즘 대회 금상", "전북대학교", "ICPC 2022"],
+        ],
       },
       skills: {
         title: "License and Certificate",
         type: "table",
         columns: ["일자", "자격/시험", "등급/점수", "기관"],
         rows: [
+          ["2025 하반기", "전북대학교 SW역량인증제", "Gold 등급", "전북대학교"],
           ["2025.11", "TOPCIT", "Level 3 (594/1000)", "정보통신기획평가원"],
           ["2025.03", "OPIc", "IH (Intermediate High)", "ACTFL"],
+          ["2025 상반기", "전북대학교 SW역량인증제", "Silver 등급", "전북대학교"],
           ["2022.07", "Cos PRO C++", "1급", "YBM IT"],
         ],
       },
@@ -375,10 +451,35 @@ export const portfolioContent = {
         cards: [
           {
             title: "JBNU Vision Intelligence Lab",
-            meta: "Undergraduate Researcher | Mar 2025 - present",
+            meta: "Undergraduate Researcher | Mar 2025 - Present",
             bullets: [
               "Implemented and evaluated vision/AI research ideas",
               "Conducted model development and performance analysis in project settings",
+            ],
+          },
+          {
+            title: "Problem Setter, JBNU SW Competency Test",
+            meta: "Mar 2026 - Present",
+            bullets: [
+              "Participated in designing and reviewing coding test problems",
+            ],
+          },
+          {
+            title: "Teaching Assistant, JBNU",
+            meta: "Mar 2025 - Present",
+            bullets: [
+              "Discrete Mathematics (Mar 2025 - Jun 2025)",
+              "Linux Programming (Sep 2025 - Dec 2025)",
+              "Database (Mar 2026 - Present)",
+              "Assisted course operation, handled student Q&A, and supported assignments and labs",
+            ],
+          },
+          {
+            title: "Algorithm Mentor, SW Convergence Mentoring Program",
+            meta: "Sep 2025 - Present",
+            bullets: [
+              "Taught programming fundamentals, data structures, and basic algorithms to undergraduate students",
+              "Participated in both Fall 2025 and Spring 2026 programs",
             ],
           },
           {
@@ -413,21 +514,72 @@ export const portfolioContent = {
       activities: {
         title: "Activities",
         type: "cards",
-        cards: [],
+        cards: [
+          {
+            title: "Cultural Exchange & Language Program, STI West Negros University",
+            meta: "Jan 2026 - Feb 2026",
+          },
+          {
+            title: "ICPC 2025",
+            meta: "Oct 2025",
+            bullets: [
+              "Participated in Online Competition",
+              "Awarded Silver in university-level contest",
+            ],
+          },
+          {
+            title: "ICPC 2022",
+            meta: "Oct 2022 - Nov 2022",
+            bullets: [
+              "Participated in Online Competition (6 solves)",
+              "Advanced to Seoul Regional after winning Gold in university-level contest",
+              "Participated in Seoul Regional Finals (4 solves, 54th / 71)",
+            ],
+          },
+          {
+            title: "Vice President, COALA Algorithm Club",
+            meta: "Dec 2021 - Nov 2022",
+            bullets: [
+              "Conducted algorithm tutoring and one-on-one mentoring",
+              "Organized MT and managed club activities",
+            ],
+          },
+          {
+            title: "Student Council, Dept. of IT Information Engineering",
+            meta: "Mar 2022 - Nov 2022",
+            bullets: [
+              "Participated in planning and operating departmental events",
+            ],
+          },
+          {
+            title: "Educational Volunteering Program",
+            meta: "Jul 2022",
+            bullets: [
+              "Delivered lectures at JBNU affiliated high school",
+            ],
+          },
+        ],
       },
       awards: {
         title: "Awards",
         type: "table",
         columns: ["Date", "Award", "Organizer", "Notes"],
-        rows: [],
+        rows: [
+          ["Oct 2025", "Silver Award", "AWS METAmobility", "Autonomous Driving Hackathon"],
+          ["Oct 2025", "Silver Award", "JBNU", "JBNU Algorithm Contest (ICPC 2025)"],
+          ["May 2025", "9th Place", "JBNU", "JBNUPC (JBNU Programming Contest)"],
+          ["Oct 2022", "Gold Award", "JBNU", "JBNU Algorithm Contest (ICPC 2022)"],
+        ],
       },
       skills: {
         title: "License and Certificate",
         type: "table",
         columns: ["Date", "Certificate", "Level / Score", "Organization"],
         rows: [
+          ["Late 2025", "JBNU SW Competency Certification", "Gold Level", "JBNU"],
           ["Nov 2025", "TOPCIT", "Level 3 (594/1000)", "IITP"],
           ["Mar 2025", "OPIc", "IH (Intermediate High)", "ACTFL"],
+          ["Early 2025", "JBNU SW Competency Certification", "Silver Level", "JBNU"],
           ["Jul 2022", "Cos PRO C++", "Professional (Level 1)", "YBM IT"],
         ],
       },
@@ -437,7 +589,7 @@ export const portfolioContent = {
         cards: [
           {
             title: "JBNU, B.S. in IT Information Engineering",
-            meta: "Mar 2021 - present",
+            meta: "Mar 2021 - Present",
             subtitle: "3.95/4.5 | In Progress",
           },
           {
