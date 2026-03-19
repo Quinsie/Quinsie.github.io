@@ -109,7 +109,7 @@ export const portfolioContent = {
         type: "cards",
         cards: [
           {
-            title: "E-Safe - KESCO 전기재해위험지도 관리시스템",
+            title: "E-Safe - KESCO(한국전기안전공사) 전기재해위험지도 관리시스템",
             meta: "팀 프로젝트 | 2026.03 - Present",
             subtitle: "AI/ML, 데이터 분석",
             bullets: [
