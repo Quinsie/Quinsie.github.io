@@ -73,6 +73,8 @@ function CardSection({ cards }) {
 }
 
 function TableSection({ columns, rows }) {
+  const hasRows = rows.length > 0;
+
   return (
     <div className="cv-grid">
       <article className="cv-card">
@@ -82,16 +84,22 @@ function TableSection({ columns, rows }) {
               <div key={col}>{col}</div>
             ))}
           </div>
-          {rows.map((row) => (
-            <div className="cv-table-row" key={row.join("-")}>
-              {row.map((cell, index) => (
-                <div key={`${columns[index]}-${cell}`}>
-                  <span className="cv-cell-label">{columns[index]}: </span>
-                  {cell}
-                </div>
-              ))}
+          {hasRows ? (
+            rows.map((row) => (
+              <div className="cv-table-row" key={row.join("-")}>
+                {row.map((cell, index) => (
+                  <div key={`${columns[index]}-${cell}`}>
+                    <span className="cv-cell-label">{columns[index]}: </span>
+                    {cell}
+                  </div>
+                ))}
+              </div>
+            ))
+          ) : (
+            <div className="cv-table-row cv-table-empty">
+              <div className="cv-table-empty-text">{columns[0]} 기준 항목이 추가될 예정입니다.</div>
             </div>
-          ))}
+          )}
         </div>
       </article>
     </div>

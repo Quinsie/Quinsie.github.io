@@ -207,8 +207,9 @@ export const portfolioContent = {
       },
       awards: {
         title: "Awards",
-        type: "cards",
-        cards: [],
+        type: "table",
+        columns: ["일자", "수상명", "주관", "비고"],
+        rows: [],
       },
       skills: {
         title: "License and Certificate",
@@ -416,8 +417,9 @@ export const portfolioContent = {
       },
       awards: {
         title: "Awards",
-        type: "cards",
-        cards: [],
+        type: "table",
+        columns: ["Date", "Award", "Organizer", "Notes"],
+        rows: [],
       },
       skills: {
         title: "License and Certificate",

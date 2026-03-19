@@ -175,6 +175,15 @@ body {
   color: #111827;
 }
 
+.cv-table-empty {
+  grid-template-columns: 1fr;
+}
+
+.cv-table-empty-text {
+  color: #6b7280;
+  font-style: italic;
+}
+
 .cv-cell-label {
   display: none;
 }
