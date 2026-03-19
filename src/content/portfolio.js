@@ -47,7 +47,6 @@ export const portfolioContent = {
       ],
       contactLabel: "Contact",
       email: "hoyyang22@jbnu.ac.kr",
-      phone: "010-2791-0501",
       birth: "2000.04.29",
       githubText: "https://github.com/Quinsie/",
       blogText: "https://velog.io/@coverrrho/",
@@ -61,10 +60,6 @@ export const portfolioContent = {
             label: "Email",
             value: "hoyyang22@jbnu.ac.kr",
             href: "mailto:hoyyang22@jbnu.ac.kr",
-          },
-          {
-            label: "Phone",
-            value: "010-2791-0501",
           },
           {
             label: "Birth",
@@ -226,7 +221,6 @@ export const portfolioContent = {
       ],
       contactLabel: "Contact",
       email: "hoyyang22@jbnu.ac.kr",
-      phone: "+82 10-2791-0501",
       birth: "Apr 29, 2000",
       githubText: "https://github.com/Quinsie/",
       blogText: "https://velog.io/@coverrrho/",
@@ -240,10 +234,6 @@ export const portfolioContent = {
             label: "Email",
             value: "hoyyang22@jbnu.ac.kr",
             href: "mailto:hoyyang22@jbnu.ac.kr",
-          },
-          {
-            label: "Phone",
-            value: "+82 10-2791-0501",
           },
           {
             label: "Birth",

@@ -36,8 +36,7 @@ export default function Home({ language }) {
           </div>
 
           <p className="contact-line">
-            <strong>{home.contactLabel}.</strong> Email. {home.email} | Phone. {home.phone} |
-            {" "}Birth. {home.birth}
+            <strong>{home.contactLabel}.</strong> Email. {home.email} | Birth. {home.birth}
           </p>
           <p className="contact-line">
             Github. {home.githubText} | Blog. {home.blogText}
