@@ -160,6 +160,14 @@ export const portfolioContent = {
         type: "cards",
         cards: [
           {
+            title: "전북대학교 시각지능연구실",
+            meta: "학부연구생 | 2025.03 - present",
+            bullets: [
+              "Vision/AI 기반 연구 주제 실험 및 구현",
+              "프로젝트 단위 모델 개발 및 성능 분석",
+            ],
+          },
+          {
             title: "Holysoft Studio",
             meta: "학생 인턴 | 2026.01 - 2026.02",
             bullets: [
@@ -167,14 +175,6 @@ export const portfolioContent = {
               "C# 스크립트를 활용한 게임 로직 구현 및 기능 개발 경험",
               "게임 오브젝트 구조 및 이벤트 시스템 이해를 기반으로 간단한 인터랙션 구현",
               "게임 개발 전반의 파이프라인(기획개발테스트) 실무 프로세스 경험",
-            ],
-          },
-          {
-            title: "전북대학교 시각지능연구실",
-            meta: "학부연구생 | 2025.03 - present",
-            bullets: [
-              "Vision/AI 기반 연구 주제 실험 및 구현",
-              "프로젝트 단위 모델 개발 및 성능 분석",
             ],
           },
           {
@@ -357,6 +357,14 @@ export const portfolioContent = {
         type: "cards",
         cards: [
           {
+            title: "JBNU Vision Intelligence Lab",
+            meta: "Undergraduate Researcher | Mar 2025 - present",
+            bullets: [
+              "Implemented and evaluated vision/AI research ideas",
+              "Conducted model development and performance analysis in project settings",
+            ],
+          },
+          {
             title: "Holysoft Studio",
             meta: "Student Intern | Jan 2026 - Feb 2026",
             bullets: [
@@ -364,14 +372,6 @@ export const portfolioContent = {
               "Implemented game logic and features using C# scripting",
               "Built simple interactive systems based on Unity's object and event architecture",
               "Experienced the full game development pipeline from planning to testing",
-            ],
-          },
-          {
-            title: "JBNU Vision Intelligence Lab",
-            meta: "Undergraduate Researcher | Mar 2025 - present",
-            bullets: [
-              "Implemented and evaluated vision/AI research ideas",
-              "Conducted model development and performance analysis in project settings",
             ],
           },
           {
