@@ -1,6 +1,5 @@
 export const sectionOrder = [
   "home",
-  "contact",
   "research",
   "projects",
   "experience",
@@ -8,6 +7,7 @@ export const sectionOrder = [
   "awards",
   "skills",
   "education",
+  "contact",
 ];
 
 export const socialLinks = [
