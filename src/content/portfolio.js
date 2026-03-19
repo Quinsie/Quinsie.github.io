@@ -105,6 +105,19 @@ export const portfolioContent = {
         type: "cards",
         cards: [
           {
+            title: "E-Safe - KESCO 전기재해위험지도 관리시스템",
+            meta: "팀 프로젝트 | 2026.03 - present",
+            subtitle: "AI/ML, 데이터 분석",
+            bullets: [
+              "건물 정적 위험요소, 기상 위험, 설비 점검/검사 이력, 과거 화재 이력을 결합한 전기재해 위험도 산정 시스템 개발",
+              "건물 단위 전기재해 위험지수 모델 설계 및 분석 알고리즘 개발",
+              "AI 기반 재난 예측 및 분석이 가능한 신규 모델 구축 예정",
+              "공공기관 서식 대응을 위한 보고서 자동 생성 시스템 설계",
+              "DB 설계 및 프론트엔드/백엔드 전반의 데이터 파이프라인 최적화 수행",
+            ],
+            links: [],
+          },
+          {
             title: "새로버스 - BIS 개선 프로젝트",
             meta: "개인 프로젝트 | 2025.03 - 2025.06",
             subtitle: "Pytorch (MLP), FastAPI, Python, Kotlin/XML",
@@ -278,6 +291,19 @@ export const portfolioContent = {
         title: "Projects",
         type: "cards",
         cards: [
+          {
+            title: "E-Safe - KESCO Electrical Hazard Risk Mapping System",
+            meta: "Team Project | Mar 2026 - Present",
+            subtitle: "AI/ML, Data Analysis",
+            bullets: [
+              "Developing a risk assessment system that integrates structural risk factors, weather conditions, inspection history, and past fire records",
+              "Designing building-level electrical hazard risk index models and analytical algorithms",
+              "Planning to build AI-based models for disaster prediction and analysis",
+              "Designing an automated report generation system aligned with public institution formats",
+              "Optimizing end-to-end data pipelines including database, backend, and frontend systems",
+            ],
+            links: [],
+          },
           {
             title: "Saero Bus - BIS Improvement Project",
             meta: "Personal Project | Mar 2025 - Jun 2025",
