@@ -4,6 +4,8 @@ export const sectionOrder = [
   "research",
   "projects",
   "experience",
+  "activities",
+  "awards",
   "skills",
   "education",
 ];
@@ -34,6 +36,8 @@ export const portfolioContent = {
       research: "Publications",
       projects: "Projects",
       experience: "Experience",
+      activities: "Activities",
+      awards: "Awards",
       skills: "License & Certificate",
       education: "Education",
     },
@@ -196,6 +200,16 @@ export const portfolioContent = {
           },
         ],
       },
+      activities: {
+        title: "Activities",
+        type: "cards",
+        cards: [],
+      },
+      awards: {
+        title: "Awards",
+        type: "cards",
+        cards: [],
+      },
       skills: {
         title: "License and Certificate",
         type: "table",
@@ -231,6 +245,8 @@ export const portfolioContent = {
       research: "Publications",
       projects: "Projects",
       experience: "Experience",
+      activities: "Activities",
+      awards: "Awards",
       skills: "License & Certificate",
       education: "Education",
     },
@@ -392,6 +408,16 @@ export const portfolioContent = {
             ],
           },
         ],
+      },
+      activities: {
+        title: "Activities",
+        type: "cards",
+        cards: [],
+      },
+      awards: {
+        title: "Awards",
+        type: "cards",
+        cards: [],
       },
       skills: {
         title: "License and Certificate",

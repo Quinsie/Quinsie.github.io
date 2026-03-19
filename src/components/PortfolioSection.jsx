@@ -33,6 +33,16 @@ function ContactSection({ entries }) {
 }
 
 function CardSection({ cards }) {
+  if (!cards.length) {
+    return (
+      <div className="cv-grid">
+        <article className="cv-card cv-empty-card">
+          <p className="cv-empty-text">Content will be added here.</p>
+        </article>
+      </div>
+    );
+  }
+
   return (
     <div className="cv-grid">
       {cards.map((card) => (
