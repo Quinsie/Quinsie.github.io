@@ -87,7 +87,7 @@ export const portfolioContent = {
         cards: [
           {
             title: "전기설비 안전점검 우선순위화를 위한 Cascade 기반 전기재해 위험 예측 모델 연구",
-            meta: "대한전기학회 전기안전부문 | 공동저자, 게재 확정 및 발표",
+            meta: "대한전기학회 전기안전부문",
             bullets: [
               "화재사건, 건물/전기설비, 기상, 점검 데이터를 건물-월 단위로 전처리하여 전기화재 위험 예측 데이터셋 구축",
               "희소한 화재 발생 데이터(양성 비율 0.07%)를 대상으로 2단계 Cascade CatBoost 모델을 설계하여 점검 후보군 선별 및 위험 순위화",
@@ -120,14 +120,15 @@ export const portfolioContent = {
         cards: [
           {
             title: "E-Safe - KESCO(한국전기안전공사) 전기재해위험지도 관리시스템",
-            meta: "팀 프로젝트 | 2026.03 - Present",
+            meta: "팀 프로젝트 | 2026.03 - 2026.06",
             subtitle: "CatBoost, SHAP, 전자정부표준프레임워크, 데이터 파이프라인",
             bullets: [
               "화재사건, 건물 및 전기설비, 기상, 점검/검사 이력을 결합한 데이터 전처리 및 건물 단위 전기재해 위험도 산정 시스템 개발",
               "CatBoost 기반 모델로 60일 이내 화재 발생 가능성을 예측하고, Cascade 구조를 통해 현장 점검 대상의 우선순위를 산출",
+              "프로젝트 연구 결과를 바탕으로 대한전기학회 전기안전부문 학술대회 공동저자 논문을 게재 확정하고 발표",
               "전자정부표준프레임워크 기반 업무 웹사이트를 구현 및 배포하여 위험도 조회와 점검 의사결정을 지원",
-              "광주 및 전남 지역에서 실제 실증 중이며, 한국전기안전공사 파일럿 테스트를 통해 현업 적용성 검증 수행",
-              "전국 단위 확장과 함께 동일 주제의 전국민 AI 경진대회 본선 프로젝트를 진행 중",
+              "광주 및 전남 지역 실증과 한국전기안전공사 파일럿 테스트를 통해 현업 적용성을 검증",
+              "전국 단위 확장 방안을 검토하고, 동일 주제의 전국민 AI 경진대회 본선 프로젝트를 수행",
             ],
             links: [],
           },
@@ -178,15 +179,8 @@ export const portfolioContent = {
             meta: "학부연구생 | 2025.03 - Present",
             bullets: [
               "연구실 하드웨어와 개발 환경을 관리하고 서버실 운영을 지원",
-              "학부연구생 리더로서 작업 환경 설정, 장비 및 계정 관리, 연구실 운영을 지원",
+              "연구실 작업 환경 설정, 장비 및 계정 관리, 연구실 운영을 지원",
               "비디오 모아레 패턴 제거 및 화질 복원 연구 과제의 문헌 검토, 정기 세미나, 데이터 및 실험 환경 준비에 참여",
-            ],
-          },
-          {
-            title: "전북대학교 SW역량인증제 출제위원",
-            meta: "2026.03 - Present",
-            bullets: [
-              "교내 코딩테스트 문제 출제 및 검수 참여",
             ],
           },
           {
@@ -262,17 +256,19 @@ export const portfolioContent = {
             ],
           },
           {
-            title: "COALA 알고리즘 동아리 부회장",
+            title: "COALA 알고리즘 동아리",
             meta: "2021.12 - 2022.11",
             bullets: [
+              "동아리 부회장",
               "알고리즘 튜터링 및 개인 멘토링 진행",
               "MT 기획 및 동아리 운영 활동 수행",
             ],
           },
           {
-            title: "전북대학교 IT정보공학과 학생회 기획국",
+            title: "전북대학교 IT지능정보공학과 1대 학생회",
             meta: "2022.03 - 2022.11",
             bullets: [
+              "기획국원",
               "학과 행사 기획 및 운영 참여",
             ],
           },
@@ -289,8 +285,9 @@ export const portfolioContent = {
         title: "Awards",
         type: "table",
         columns: ["일자", "수상명", "주관", "비고"],
-        rows: [
-          ["2025.10", "은상", "AWS METAmobility", "자율주행 자동차 경진대회 해커톤"],
+          rows: [
+            ["2026.06", "장려상", "전북대학교", "2026-1 캡스톤디자인 경진대회"],
+            ["2025.10", "은상", "AWS METAmobility", "자율주행 자동차 경진대회 해커톤"],
           ["2025.10", "은상", "전북대학교", "교내 알고리즘 대회 (ICPC 2025)"],
           ["2025.05", "9위", "전북대학교", "JBNUPC (전북대학교 프로그래밍 대회)"],
           ["2022.10", "금상", "전북대학교", "교내 알고리즘 대회 (ICPC 2022)"],
@@ -301,7 +298,7 @@ export const portfolioContent = {
         type: "table",
         columns: ["일자", "자격/시험", "등급/점수", "기관"],
         rows: [
-          ["2025.11", "TOPCIT", "Level 3 (632/1000)", "정보통신기획평가원"],
+          ["2026.05", "TOPCIT", "Level 3 (632/1000)", "정보통신기획평가원"],
           ["2025.03", "OPIc", "IH (Intermediate High)", "ACTFL"],
           ["2022.07", "Cos PRO C++", "1급", "YBM IT"],
         ],
@@ -382,7 +379,7 @@ export const portfolioContent = {
         cards: [
           {
             title: "A Cascade-Based Electrical Disaster Risk Prediction Model for Prioritizing Electrical Facility Safety Inspections",
-            meta: "KIEE Electrical Safety Division | Co-author, Accepted and Presented",
+            meta: "KIEE Electrical Safety Division",
             bullets: [
               "Built a building-month dataset by preprocessing fire incidents, building/electrical-facility, weather, and inspection data",
               "Designed a two-stage Cascade CatBoost model to prioritize inspections under an extreme class imbalance (0.07% positive rate)",
@@ -415,14 +412,15 @@ export const portfolioContent = {
         cards: [
           {
             title: "E-Safe - KESCO Electrical Hazard Risk Mapping System",
-            meta: "Team Project | Mar 2026 - Present",
+            meta: "Team Project | Mar 2026 - Jun 2026",
             subtitle: "CatBoost, SHAP, e-Government Framework, Data Pipelines",
             bullets: [
-              "Developing a building-level electrical-disaster risk assessment system from fire incidents, building/electrical-facility, weather, and inspection data",
-              "Predicting the likelihood of fire within 60 days with a CatBoost-based model and prioritizing field-inspection targets through a Cascade architecture",
+              "Developed a building-level electrical-disaster risk assessment system from fire incidents, building/electrical-facility, weather, and inspection data",
+              "Predicted the likelihood of fire within 60 days with a CatBoost-based model and prioritized field-inspection targets through a Cascade architecture",
+              "Co-authored and presented an accepted paper at the KIEE Electrical Safety Division conference based on project research results",
               "Built and deployed an operational web application on the e-Government Standard Framework to support risk lookup and inspection decisions",
-              "Conducting real-world validation in the Gwangju–Jeonnam region; KESCO is running a pilot test for operational adoption",
-              "Advancing a nationwide rollout while competing as a finalist in a national AI competition on the same topic",
+              "Validated operational applicability through field validation in the Gwangju–Jeonnam region and a KESCO pilot test",
+              "Explored nationwide expansion and advanced to the finals of a national AI competition on the same topic",
             ],
             links: [],
           },
@@ -473,15 +471,8 @@ export const portfolioContent = {
             meta: "Undergraduate Researcher | Mar 2025 - Present",
             bullets: [
               "Manage lab hardware and development environments, including server-room operations",
-              "Lead undergraduate researchers by supporting workspace setup, equipment and account management, and lab operations",
+              "Support workspace setup, equipment and account management, and lab operations",
               "Participate in literature review, regular seminars, and data and experiment-environment preparation for video moiré-pattern removal and restoration research",
-            ],
-          },
-          {
-            title: "Problem Setter, JBNU SW Competency Test",
-            meta: "Mar 2026 - Present",
-            bullets: [
-              "Participated in designing and reviewing coding test problems",
             ],
           },
           {
@@ -557,17 +548,19 @@ export const portfolioContent = {
             ],
           },
           {
-            title: "Vice President, COALA Algorithm Club",
+            title: "COALA Algorithm Club",
             meta: "Dec 2021 - Nov 2022",
             bullets: [
+              "Vice President",
               "Conducted algorithm tutoring and one-on-one mentoring",
               "Organized MT and managed club activities",
             ],
           },
           {
-            title: "Student Council, Dept. of IT Information Engineering",
+            title: "1st Student Council, Department of IT Intelligence and Information Engineering, JBNU",
             meta: "Mar 2022 - Nov 2022",
             bullets: [
+              "Planning Bureau Member",
               "Participated in planning and operating departmental events",
             ],
           },
@@ -584,7 +577,8 @@ export const portfolioContent = {
         title: "Awards",
         type: "table",
         columns: ["Date", "Award", "Organizer", "Notes"],
-        rows: [
+          rows: [
+          ["Jun 2026", "Encouragement Award", "JBNU", "2026-1 Capstone Design Competition"],
           ["Oct 2025", "Silver Award", "AWS METAmobility", "Autonomous Driving Hackathon"],
           ["Oct 2025", "Silver Award", "JBNU", "JBNU Algorithm Contest (ICPC 2025)"],
           ["May 2025", "9th Place", "JBNU", "JBNUPC (JBNU Programming Contest)"],
@@ -596,7 +590,7 @@ export const portfolioContent = {
         type: "table",
         columns: ["Date", "Certificate", "Level / Score", "Organization"],
         rows: [
-          ["Nov 2025", "TOPCIT", "Level 3 (632/1000)", "IITP"],
+          ["May 2026", "TOPCIT", "Level 3 (632/1000)", "IITP"],
           ["Mar 2025", "OPIc", "IH (Intermediate High)", "ACTFL"],
           ["Jul 2022", "Cos PRO C++", "Professional (Level 1)", "YBM IT"],
         ],
