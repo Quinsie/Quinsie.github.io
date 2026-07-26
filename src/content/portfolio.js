@@ -86,6 +86,16 @@ export const portfolioContent = {
         type: "cards",
         cards: [
           {
+            title: "전기설비 안전점검 우선순위화를 위한 Cascade 기반 전기재해 위험 예측 모델 연구",
+            meta: "대한전기학회 전기안전부문 | 공동저자, 게재 확정 및 발표",
+            bullets: [
+              "화재사건, 건물/전기설비, 기상, 점검 데이터를 건물-월 단위로 전처리하여 전기화재 위험 예측 데이터셋 구축",
+              "희소한 화재 발생 데이터(양성 비율 0.07%)를 대상으로 2단계 Cascade CatBoost 모델을 설계하여 점검 후보군 선별 및 위험 순위화",
+              "60일 이내 화재 발생 예측에서 후보군 양성 건물 87.7%를 보존하고, 최종 상위 10% 구간에서 Recall 61.8%를 달성",
+              "SHAP 분석으로 과거 화재 이력, 공간적 주변 위험, 점검 관리 공백 등 주요 위험 신호를 해석하여 현장 점검 의사결정 지원 근거 제시",
+            ],
+          },
+          {
             title: "A Distributed Drone Weather System using LoRaWAN and LoRa Meshnet",
             meta: "IEEE RoboticCC 2025",
             bullets: [
@@ -111,13 +121,13 @@ export const portfolioContent = {
           {
             title: "E-Safe - KESCO(한국전기안전공사) 전기재해위험지도 관리시스템",
             meta: "팀 프로젝트 | 2026.03 - Present",
-            subtitle: "AI/ML, 데이터 분석",
+            subtitle: "CatBoost, SHAP, 전자정부표준프레임워크, 데이터 파이프라인",
             bullets: [
-              "건물 정적 위험요소, 기상 위험, 설비 점검/검사 이력, 과거 화재 이력을 결합한 전기재해 위험도 산정 시스템 개발",
-              "건물 단위 전기재해 위험지수 모델 설계 및 분석 알고리즘 개발",
-              "AI 기반 재난 예측 및 분석이 가능한 신규 모델 구축 예정",
-              "공공기관 서식 대응을 위한 보고서 자동 생성 시스템 설계",
-              "DB 설계 및 프론트엔드/백엔드 전반의 데이터 파이프라인 최적화 수행",
+              "화재사건, 건물 및 전기설비, 기상, 점검/검사 이력을 결합한 데이터 전처리 및 건물 단위 전기재해 위험도 산정 시스템 개발",
+              "CatBoost 기반 모델로 60일 이내 화재 발생 가능성을 예측하고, Cascade 구조를 통해 현장 점검 대상의 우선순위를 산출",
+              "전자정부표준프레임워크 기반 업무 웹사이트를 구현 및 배포하여 위험도 조회와 점검 의사결정을 지원",
+              "광주 및 전남 지역에서 실제 실증 중이며, 한국전기안전공사 파일럿 테스트를 통해 현업 적용성 검증 수행",
+              "전국 단위 확장과 함께 동일 주제의 전국민 AI 경진대회 본선 프로젝트를 진행 중",
             ],
             links: [],
           },
@@ -167,8 +177,9 @@ export const portfolioContent = {
             title: "전북대학교 시각지능연구실",
             meta: "학부연구생 | 2025.03 - Present",
             bullets: [
-              "Vision/AI 기반 연구 주제 실험 및 구현",
-              "프로젝트 단위 모델 개발 및 성능 분석",
+              "연구실 하드웨어와 개발 환경을 관리하고 서버실 운영을 지원",
+              "학부연구생 리더로서 작업 환경 설정, 장비 및 계정 관리, 연구실 운영을 지원",
+              "비디오 모아레 패턴 제거 및 화질 복원 연구 과제의 문헌 검토, 정기 세미나, 데이터 및 실험 환경 준비에 참여",
             ],
           },
           {
@@ -184,13 +195,13 @@ export const portfolioContent = {
             bullets: [
               "이산수학 (2025.03 - 2025.06)",
               "리눅스프로그래밍 (2025.09 - 2025.12)",
-              "데이터베이스 (2026.03 - Present)",
+              "데이터베이스 (2026.03 - 2026.06)",
               "교과목 운영 보조 및 실습/과제 지원, 학생 질의 응답 수행",
             ],
           },
           {
             title: "SW융합 멘토링 프로그램 알고리즘 멘토",
-            meta: "2025.09 - Present",
+            meta: "2025.09 - 2026.06",
             bullets: [
               "재학생 대상 프로그래밍 기초, 자료구조 및 알고리즘 교육",
               "2025학년도 2학기, 2026학년도 1학기 연속 수행",
@@ -290,9 +301,7 @@ export const portfolioContent = {
         type: "table",
         columns: ["일자", "자격/시험", "등급/점수", "기관"],
         rows: [
-          ["2025.12", "전북대학교 SW역량인증제", "Gold 등급", "전북대학교"],
-          ["2025.11", "TOPCIT", "Level 3 (594/1000)", "정보통신기획평가원"],
-          ["2025.06", "전북대학교 SW역량인증제", "Silver 등급", "전북대학교"],
+          ["2025.11", "TOPCIT", "Level 3 (632/1000)", "정보통신기획평가원"],
           ["2025.03", "OPIc", "IH (Intermediate High)", "ACTFL"],
           ["2022.07", "Cos PRO C++", "1급", "YBM IT"],
         ],
@@ -304,7 +313,7 @@ export const portfolioContent = {
           {
             title: "전북대학교 공과대학 IT정보공학과",
             meta: "2021.03 - present",
-            subtitle: "3.95/4.5 | 재학",
+            subtitle: "3.97/4.5 | 재학",
           },
           {
             title: "청주세광고등학교",
@@ -372,6 +381,16 @@ export const portfolioContent = {
         type: "cards",
         cards: [
           {
+            title: "A Cascade-Based Electrical Disaster Risk Prediction Model for Prioritizing Electrical Facility Safety Inspections",
+            meta: "KIEE Electrical Safety Division | Co-author, Accepted and Presented",
+            bullets: [
+              "Built a building-month dataset by preprocessing fire incidents, building/electrical-facility, weather, and inspection data",
+              "Designed a two-stage Cascade CatBoost model to prioritize inspections under an extreme class imbalance (0.07% positive rate)",
+              "Retained 87.7% of positive buildings in the candidate pool and achieved 61.8% recall in the final top 10% for 60-day fire prediction",
+              "Used SHAP to interpret key risk signals—including fire history, spatial peer risk, and inspection-management gaps—for field decision support",
+            ],
+          },
+          {
             title: "A Distributed Drone Weather System using LoRaWAN and LoRa Meshnet",
             meta: "IEEE RoboticCC 2025",
             bullets: [
@@ -397,13 +416,13 @@ export const portfolioContent = {
           {
             title: "E-Safe - KESCO Electrical Hazard Risk Mapping System",
             meta: "Team Project | Mar 2026 - Present",
-            subtitle: "AI/ML, Data Analysis",
+            subtitle: "CatBoost, SHAP, e-Government Framework, Data Pipelines",
             bullets: [
-              "Developing a risk assessment system that integrates structural risk factors, weather conditions, inspection history, and past fire records",
-              "Designing building-level electrical hazard risk index models and analytical algorithms",
-              "Planning to build AI-based models for disaster prediction and analysis",
-              "Designing an automated report generation system aligned with public institution formats",
-              "Optimizing end-to-end data pipelines including database, backend, and frontend systems",
+              "Developing a building-level electrical-disaster risk assessment system from fire incidents, building/electrical-facility, weather, and inspection data",
+              "Predicting the likelihood of fire within 60 days with a CatBoost-based model and prioritizing field-inspection targets through a Cascade architecture",
+              "Built and deployed an operational web application on the e-Government Standard Framework to support risk lookup and inspection decisions",
+              "Conducting real-world validation in the Gwangju–Jeonnam region; KESCO is running a pilot test for operational adoption",
+              "Advancing a nationwide rollout while competing as a finalist in a national AI competition on the same topic",
             ],
             links: [],
           },
@@ -453,8 +472,9 @@ export const portfolioContent = {
             title: "JBNU Vision Intelligence Lab",
             meta: "Undergraduate Researcher | Mar 2025 - Present",
             bullets: [
-              "Implemented and evaluated vision/AI research ideas",
-              "Conducted model development and performance analysis in project settings",
+              "Manage lab hardware and development environments, including server-room operations",
+              "Lead undergraduate researchers by supporting workspace setup, equipment and account management, and lab operations",
+              "Participate in literature review, regular seminars, and data and experiment-environment preparation for video moiré-pattern removal and restoration research",
             ],
           },
           {
@@ -470,13 +490,13 @@ export const portfolioContent = {
             bullets: [
               "Discrete Mathematics (Mar 2025 - Jun 2025)",
               "Linux Programming (Sep 2025 - Dec 2025)",
-              "Database (Mar 2026 - Present)",
+              "Database (Mar 2026 - Jun 2026)",
               "Assisted course operation, handled student Q&A, and supported assignments and labs",
             ],
           },
           {
             title: "Algorithm Mentor, SW Convergence Mentoring Program",
-            meta: "Sep 2025 - Present",
+            meta: "Sep 2025 - Jun 2026",
             bullets: [
               "Taught programming fundamentals, data structures, and basic algorithms to undergraduate students",
               "Participated in both Fall 2025 and Spring 2026 programs",
@@ -576,9 +596,7 @@ export const portfolioContent = {
         type: "table",
         columns: ["Date", "Certificate", "Level / Score", "Organization"],
         rows: [
-          ["Dec 2025", "JBNU SW Competency Certification", "Gold Level", "JBNU"],
-          ["Nov 2025", "TOPCIT", "Level 3 (594/1000)", "IITP"],
-          ["Jun 2025", "JBNU SW Competency Certification", "Silver Level", "JBNU"],
+          ["Nov 2025", "TOPCIT", "Level 3 (632/1000)", "IITP"],
           ["Mar 2025", "OPIc", "IH (Intermediate High)", "ACTFL"],
           ["Jul 2022", "Cos PRO C++", "Professional (Level 1)", "YBM IT"],
         ],
@@ -590,7 +608,7 @@ export const portfolioContent = {
           {
             title: "JBNU, B.S. in IT Information Engineering",
             meta: "Mar 2021 - Present",
-            subtitle: "3.95/4.5 | In Progress",
+            subtitle: "3.97/4.5 | In Progress",
           },
           {
             title: "Cheongju Sekwang High School",
