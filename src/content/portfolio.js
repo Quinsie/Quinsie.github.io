@@ -126,7 +126,6 @@ export const portfolioContent = {
           {
             title: "E-Safe - KESCO(한국전기안전공사) 전기재해위험지도 관리시스템",
             meta: "팀 프로젝트 | 2026.03 - 2026.06",
-            subtitle: "CatBoost, SHAP, 전자정부표준프레임워크, 데이터 파이프라인",
             bullets: [
               "화재사건, 건물 및 전기설비, 기상, 점검/검사 이력 데이터를 결합한 전처리 및 위험도 산정 시스템 개발",
               "CatBoost 기반 60일 이내 화재 발생 예측 및 Cascade 구조 기반 점검 우선순위 산출",
@@ -140,7 +139,6 @@ export const portfolioContent = {
           {
             title: "새로버스 - BIS 개선 프로젝트",
             meta: "개인 프로젝트 | 2025.03 - 2025.06",
-            subtitle: "Pytorch (MLP), FastAPI, Python, Kotlin/XML",
             bullets: [
               "기존 BIS 도착 예상 오차를 줄이기 위한 데이터 기반 도착 예측 시스템 개발",
               "시간, 요일, 날씨, 버스정보, 위치, 교통정보를 feature로 활용한 MLP 모델 설계",
@@ -158,7 +156,6 @@ export const portfolioContent = {
           {
             title: "DoQMate - 문서 기반 AI 챗봇 시스템",
               meta: "팀 프로젝트 | 2025.09 - 2025.12",
-            subtitle: "Qwen, Qwen-VL, EasyOCR, Flask, ChromaDB",
             bullets: [
               "PDF 중심 비정형 데이터 탐색을 위한 보안 특화 로컬 RAG 시스템 구축",
               "EasyOCR 파인튜닝 및 LLM 기반 정제 단계 도입으로 OCR 정확도 개선",
@@ -432,7 +429,6 @@ export const portfolioContent = {
           {
             title: "E-Safe - KESCO Electrical Hazard Risk Mapping System",
             meta: "Team Project | Mar 2026 - Jun 2026",
-            subtitle: "CatBoost, SHAP, e-Government Framework, Data Pipelines",
             bullets: [
               "Preprocessed fire incidents, building and electrical-facility, weather, and inspection-history data for risk assessment",
               "Developed a CatBoost model for 60-day fire prediction and a Cascade-based inspection-prioritization pipeline",
@@ -446,7 +442,6 @@ export const portfolioContent = {
           {
             title: "Saero Bus - BIS Improvement Project",
             meta: "Personal Project | Mar 2025 - Jun 2025",
-            subtitle: "Pytorch (MLP), FastAPI, Python, Kotlin/XML",
             bullets: [
               "Built a data-driven system to reduce errors in existing BIS bus arrival predictions",
               "Designed an MLP model using time, day, weather, bus, location, and traffic features",
@@ -464,7 +459,6 @@ export const portfolioContent = {
           {
             title: "DoQMate - Document-Based AI Chatbot System",
               meta: "Team Project | Sep 2025 - Dec 2025",
-            subtitle: "Qwen, Qwen-VL, EasyOCR, Flask, ChromaDB",
             bullets: [
               "Built a local RAG pipeline for secure exploration of enterprise PDF documents",
               "Improved OCR quality with EasyOCR fine-tuning and LLM-based refinement",
