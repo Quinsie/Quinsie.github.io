@@ -1,12 +1,24 @@
-# React + Vite
+# Jiho Pyo Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+AI Engineer focused on applied research, machine learning, and intelligent systems.
 
-Currently, two official plugins are available:
+[Visit Portfolio](https://quinsie.github.io/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## About
 
-## Expanding the ESLint configuration
+A personal portfolio featuring publications, projects, research experience, awards, and activities.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Contents
+
+- Publications
+- Projects
+- Experience
+- Activities
+- Awards
+- Certifications
+- Education
+
+## Contact
+
+- GitHub: [Quinsie](https://github.com/Quinsie)
+- Blog: [Velog](https://velog.io/@coverrrho)
