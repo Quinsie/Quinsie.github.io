@@ -53,7 +53,15 @@ function CardSection({ cards }) {
           {card.bullets ? (
             <ul className="cv-list">
               {card.bullets.map((bullet) => (
-                <li key={bullet}>{bullet}</li>
+                <li key={typeof bullet === "string" ? bullet : `${bullet.label}-${bullet.meta}`}>
+                  {typeof bullet === "string" ? (
+                    bullet
+                  ) : (
+                    <>
+                      {bullet.label} <span className="cv-inline-meta">{bullet.meta}</span>
+                    </>
+                  )}
+                </li>
               ))}
             </ul>
           ) : null}

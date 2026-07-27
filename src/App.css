@@ -104,6 +104,11 @@ body {
   font-size: 0.95rem;
 }
 
+.cv-inline-meta {
+  color: #374151;
+  font-size: 0.95rem;
+}
+
 .cv-meta {
   margin: 0 0 6px;
   color: #4b5563;
