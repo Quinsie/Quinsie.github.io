@@ -89,10 +89,10 @@ export const portfolioContent = {
             title: "전기설비 안전점검 우선순위화를 위한 Cascade 기반 전기재해 위험 예측 모델 연구",
             meta: "2026 대한전기학회 하계학술대회",
             bullets: [
-              "화재사건, 건물/전기설비, 기상, 점검 데이터를 건물-월 단위로 전처리하여 전기화재 위험 예측 데이터셋 구축",
-              "희소한 화재 발생 데이터(양성 비율 0.07%)를 대상으로 2단계 Cascade CatBoost 모델을 설계하여 점검 후보군 선별 및 위험 순위화",
-              "60일 이내 화재 발생 예측에서 후보군 양성 건물 87.7%를 보존하고, 최종 상위 10% 구간에서 Recall 61.8%를 달성",
-              "SHAP 분석으로 과거 화재 이력, 공간적 주변 위험, 점검 관리 공백 등 주요 위험 신호를 해석하여 현장 점검 의사결정 지원 근거 제시",
+              "화재사건, 건물 및 전기설비, 기상, 점검 이력 데이터 전처리 및 건물-월 단위 예측 데이터셋 구축",
+              "희소 화재 데이터 기반 Cascade CatBoost 모델 설계 및 점검 후보군 우선순위화",
+              "60일 이내 화재 예측에서 후보군 양성 건물 87.7% 보존 및 상위 10% Recall 61.8% 달성",
+              "SHAP 기반 위험 요인 분석 및 현장 점검 의사결정 근거 제시",
             ],
           },
           {
@@ -379,10 +379,10 @@ export const portfolioContent = {
             title: "A Cascade-Based Electrical Disaster Risk Prediction Model for Prioritizing Electrical Facility Safety Inspections",
             meta: "KIEE Summer Conference 2026",
             bullets: [
-              "Built a building-month dataset by preprocessing fire incidents, building/electrical-facility, weather, and inspection data",
-              "Designed a two-stage Cascade CatBoost model to prioritize inspections under an extreme class imbalance (0.07% positive rate)",
-              "Retained 87.7% of positive buildings in the candidate pool and achieved 61.8% recall in the final top 10% for 60-day fire prediction",
-              "Used SHAP to interpret key risk signals—including fire history, spatial peer risk, and inspection-management gaps—for field decision support",
+                "Built a building-month prediction dataset from fire incidents, building and electrical-facility, weather, and inspection-history data",
+                "Designed a Cascade CatBoost model to prioritize inspection candidates from sparse fire data",
+                "Retained 87.7% of positive buildings and achieved 61.8% recall in the top 10% for 60-day fire prediction",
+                "Analyzed risk factors with SHAP to support field-inspection decisions",
             ],
           },
           {
