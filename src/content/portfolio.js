@@ -182,6 +182,12 @@ export const portfolioContent = {
               "연구실 작업 환경 설정, 장비 및 계정 관리, 연구실 운영을 지원",
               "비디오 모아레 패턴 제거 및 화질 복원 연구 과제의 문헌 검토, 정기 세미나, 데이터 및 실험 환경 준비에 참여",
             ],
+            links: [
+              {
+                label: "Lab Website",
+                href: "https://jbnu-vilab.github.io/",
+              },
+            ],
           },
           {
             title: "전북대학교 교과목 TA (수업조교)",
@@ -195,7 +201,7 @@ export const portfolioContent = {
           },
           {
             title: "SW융합 멘토링 프로그램 알고리즘 멘토",
-            meta: "2025.09 - 2026.06",
+            meta: "2025.09 - 2025.12, 2026.03 - 2026.06",
             bullets: [
               "재학생 대상 프로그래밍 기초, 자료구조 및 알고리즘 교육",
               "2025학년도 2학기, 2026학년도 1학기 연속 수행",
@@ -213,7 +219,7 @@ export const portfolioContent = {
           },
           {
             title: "주식회사 액티부키",
-            meta: "학생 인턴 | 2025.09 (1개월)",
+            meta: "학생 인턴 | 2025.09",
             bullets: [
               "농업 데이터셋 기반 YOLO/Faster R-CNN 모델 구현 및 평가",
               "데이터 증강/하이퍼파라미터 튜닝을 통한 일반화 성능 개선",
@@ -221,8 +227,18 @@ export const portfolioContent = {
             ],
           },
           {
+            title: "주식회사 액티부키",
+            meta: "학생 인턴 | 2026.07",
+            bullets: [
+              "디지털 트윈 및 3D 실감형 콘텐츠 플랫폼의 산업 동향, 구조 및 활용 가능성 조사",
+              "3D 모델링, 공간 데이터 구축, 실시간 상태 표현을 위한 데이터 처리 및 시각화 기술 검토",
+              "가상 공간 이동, 객체 선택, 정보 조회 등 사용자 상호작용과 인터페이스 구성 방안 분석",
+              "데이터 수집부터 가상 공간 구축, 콘텐츠 시각화, 사용자 상호작용까지의 플랫폼 흐름 및 확장 방향 정리",
+            ],
+          },
+          {
             title: "Purdue University",
-            meta: "학생 인턴 | 2025.06 - 2025.08 (2개월)",
+            meta: "학생 인턴 | 2025.06 - 2025.08",
             bullets: [
               "국제 공동연구 성과를 바탕으로 RoboticCC 2025 논문 공동 저술",
               "논문 채택 및 발표 수행",
@@ -472,6 +488,12 @@ export const portfolioContent = {
               "Support workspace setup, equipment and account management, and lab operations",
               "Participate in literature review, regular seminars, and data and experiment-environment preparation for video moiré-pattern removal and restoration research",
             ],
+            links: [
+              {
+                label: "Lab Website",
+                href: "https://jbnu-vilab.github.io/",
+              },
+            ],
           },
           {
             title: "Teaching Assistant, JBNU",
@@ -485,7 +507,7 @@ export const portfolioContent = {
           },
           {
             title: "Algorithm Mentor, SW Convergence Mentoring Program",
-            meta: "Sep 2025 - Jun 2026",
+            meta: "Sep 2025 - Dec 2025, Mar 2026 - Jun 2026",
             bullets: [
               "Taught programming fundamentals, data structures, and basic algorithms to undergraduate students",
               "Participated in both Fall 2025 and Spring 2026 programs",
@@ -508,6 +530,16 @@ export const portfolioContent = {
               "Implemented and evaluated YOLO/Faster R-CNN object detection models on agricultural datasets",
               "Improved generalization through data augmentation and hyperparameter tuning",
               "Analyzed speed-accuracy trade-offs with compression and quantization",
+            ],
+          },
+          {
+            title: "ActiBooky Inc.",
+            meta: "Student Intern | Jul 2026",
+            bullets: [
+              "Reviewed industry trends, architecture, and applications of digital-twin and 3D immersive-content platforms",
+              "Examined 3D modeling, spatial-data construction, and data-processing and visualization techniques for real-time state representation",
+              "Analyzed interaction and interface approaches for navigation, object selection, and information retrieval in virtual spaces",
+              "Organized the end-to-end platform flow from data collection and virtual-space construction to visualization and user interaction",
             ],
           },
           {
