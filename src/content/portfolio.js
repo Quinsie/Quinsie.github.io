@@ -87,7 +87,7 @@ export const portfolioContent = {
         cards: [
           {
             title: "전기설비 안전점검 우선순위화를 위한 Cascade 기반 전기재해 위험 예측 모델 연구",
-            meta: "대한전기학회 전기안전부문",
+            meta: "2026 대한전기학회 하계학술대회",
             bullets: [
               "화재사건, 건물/전기설비, 기상, 점검 데이터를 건물-월 단위로 전처리하여 전기화재 위험 예측 데이터셋 구축",
               "희소한 화재 발생 데이터(양성 비율 0.07%)를 대상으로 2단계 Cascade CatBoost 모델을 설계하여 점검 후보군 선별 및 위험 순위화",
@@ -123,12 +123,12 @@ export const portfolioContent = {
             meta: "팀 프로젝트 | 2026.03 - 2026.06",
             subtitle: "CatBoost, SHAP, 전자정부표준프레임워크, 데이터 파이프라인",
             bullets: [
-              "화재사건, 건물 및 전기설비, 기상, 점검/검사 이력을 결합한 데이터 전처리 및 건물 단위 전기재해 위험도 산정 시스템 개발",
-              "CatBoost 기반 모델로 60일 이내 화재 발생 가능성을 예측하고, Cascade 구조를 통해 현장 점검 대상의 우선순위를 산출",
-              "프로젝트 연구 결과를 바탕으로 대한전기학회 전기안전부문 학술대회 공동저자 논문을 게재 확정하고 발표",
-              "전자정부표준프레임워크 기반 업무 웹사이트를 구현 및 배포하여 위험도 조회와 점검 의사결정을 지원",
-              "광주 및 전남 지역 실증과 한국전기안전공사 파일럿 테스트를 통해 현업 적용성을 검증",
-              "전국 단위 확장 방안을 검토하고, 동일 주제의 전국민 AI 경진대회 본선 프로젝트를 수행",
+              "화재사건, 건물 및 전기설비, 기상, 점검/검사 이력 데이터를 결합한 전처리 및 위험도 산정 시스템 개발",
+              "CatBoost 기반 60일 이내 화재 발생 예측 및 Cascade 구조 기반 점검 우선순위 산출",
+              "연구 결과를 바탕으로 대한전기학회 하계학술대회 공동저자 논문 게재 및 발표",
+              "전자정부표준프레임워크 기반 업무 웹사이트 구현 및 배포",
+              "광주 및 전남 지역 실증 및 한국전기안전공사 파일럿 테스트를 통한 현업 적용성 검증",
+              "전국 단위 확장 검토 및 동일 주제의 전국민 AI 경진대회 본선 프로젝트 수행",
             ],
             links: [],
           },
@@ -152,7 +152,7 @@ export const portfolioContent = {
           },
           {
             title: "DoQMate - 문서 기반 AI 챗봇 시스템",
-            meta: "팀 프로젝트 (캡스톤) | 2025.09 - 2025.12",
+              meta: "팀 프로젝트 | 2025.09 - 2025.12",
             subtitle: "Qwen, Qwen-VL, EasyOCR, Flask, ChromaDB",
             bullets: [
               "PDF 중심 비정형 데이터 탐색을 위한 보안 특화 로컬 RAG 시스템 구축",
@@ -257,19 +257,17 @@ export const portfolioContent = {
           },
           {
             title: "COALA 알고리즘 동아리",
-            meta: "2021.12 - 2022.11",
+            meta: "동아리 부회장 | 2021.12 - 2022.11",
             bullets: [
-              "동아리 부회장",
-              "알고리즘 튜터링 및 개인 멘토링 진행",
+                "알고리즘 튜터링 및 개인 멘토링 진행",
               "MT 기획 및 동아리 운영 활동 수행",
             ],
           },
           {
             title: "전북대학교 IT지능정보공학과 1대 학생회",
-            meta: "2022.03 - 2022.11",
+            meta: "기획국원 | 2022.03 - 2022.11",
             bullets: [
-              "기획국원",
-              "학과 행사 기획 및 운영 참여",
+                "학과 행사 기획 및 운영 참여",
             ],
           },
           {
@@ -379,7 +377,7 @@ export const portfolioContent = {
         cards: [
           {
             title: "A Cascade-Based Electrical Disaster Risk Prediction Model for Prioritizing Electrical Facility Safety Inspections",
-            meta: "KIEE Electrical Safety Division",
+            meta: "KIEE Summer Conference 2026",
             bullets: [
               "Built a building-month dataset by preprocessing fire incidents, building/electrical-facility, weather, and inspection data",
               "Designed a two-stage Cascade CatBoost model to prioritize inspections under an extreme class imbalance (0.07% positive rate)",
@@ -415,11 +413,11 @@ export const portfolioContent = {
             meta: "Team Project | Mar 2026 - Jun 2026",
             subtitle: "CatBoost, SHAP, e-Government Framework, Data Pipelines",
             bullets: [
-              "Developed a building-level electrical-disaster risk assessment system from fire incidents, building/electrical-facility, weather, and inspection data",
-              "Predicted the likelihood of fire within 60 days with a CatBoost-based model and prioritized field-inspection targets through a Cascade architecture",
-              "Co-authored and presented an accepted paper at the KIEE Electrical Safety Division conference based on project research results",
-              "Built and deployed an operational web application on the e-Government Standard Framework to support risk lookup and inspection decisions",
-              "Validated operational applicability through field validation in the Gwangju–Jeonnam region and a KESCO pilot test",
+              "Preprocessed fire incidents, building and electrical-facility, weather, and inspection-history data for risk assessment",
+              "Developed a CatBoost model for 60-day fire prediction and a Cascade-based inspection-prioritization pipeline",
+              "Co-authored and presented a paper at KIEE Summer Conference 2026 based on the project research",
+              "Built and deployed an operational web application on the e-Government Standard Framework",
+              "Validated field applicability through regional testing in Gwangju and Jeonnam and a KESCO pilot test",
               "Explored nationwide expansion and advanced to the finals of a national AI competition on the same topic",
             ],
             links: [],
@@ -444,7 +442,7 @@ export const portfolioContent = {
           },
           {
             title: "DoQMate - Document-Based AI Chatbot System",
-            meta: "Team Project (Capstone) | Sep 2025 - Dec 2025",
+              meta: "Team Project | Sep 2025 - Dec 2025",
             subtitle: "Qwen, Qwen-VL, EasyOCR, Flask, ChromaDB",
             bullets: [
               "Built a local RAG pipeline for secure exploration of enterprise PDF documents",
@@ -549,19 +547,17 @@ export const portfolioContent = {
           },
           {
             title: "COALA Algorithm Club",
-            meta: "Dec 2021 - Nov 2022",
+            meta: "Vice President | Dec 2021 - Nov 2022",
             bullets: [
-              "Vice President",
-              "Conducted algorithm tutoring and one-on-one mentoring",
+                "Conducted algorithm tutoring and one-on-one mentoring",
               "Organized MT and managed club activities",
             ],
           },
           {
             title: "1st Student Council, Department of IT Intelligence and Information Engineering, JBNU",
-            meta: "Mar 2022 - Nov 2022",
+            meta: "Planning Bureau Member | Mar 2022 - Nov 2022",
             bullets: [
-              "Planning Bureau Member",
-              "Participated in planning and operating departmental events",
+                "Participated in planning and operating departmental events",
             ],
           },
           {
