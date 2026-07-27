@@ -100,10 +100,10 @@ export const portfolioContent = {
             meta: "IEEE RoboticCC 2025",
             bullets: [
               "메쉬 네트워크 충돌 방지를 위한 Polling 기반 통신 프로토콜 설계 및 구현",
-              "DFS 기반 Spanning Tree 토폴로지로 안정적인 Token Handover 알고리즘 개발",
-              "드론 간 효율적인 데이터 송수신을 위한 LoRa 패킷 구조 설계 및 통신 로직 구현",
-              "ALOHA 프로토콜의 한계 실험 및 제안 방식 성능 검증",
-              "Methodology 섹션 작성 및 시스템 아키텍처 코드 구현",
+              "DFS 기반 탐색과 Backtracking을 적용한 분산 Token Handover 알고리즘 개발",
+              "DISC 패킷 기반 연결성 탐색 및 멱등적 데이터 병합 로직 설계",
+              "드론 간 데이터 전달을 위한 LoRa 패킷 구조 및 통신 로직 구현",
+              "Methodology 섹션 작성과 시스템 아키텍처 코드 구현, 현장 연결성 테스트 수행",
             ],
             links: [
               {
@@ -390,10 +390,10 @@ export const portfolioContent = {
             meta: "IEEE RoboticCC 2025",
             bullets: [
               "Implemented a polling-based protocol to prevent collisions in mesh communication",
-              "Developed a DFS-based spanning-tree topology for stable token handover",
-              "Designed a custom LoRa packet structure and communication logic",
-              "Validated ALOHA limitations and the effectiveness of the proposed approach",
-              "Authored the Methodology section and implemented system architecture in code",
+              "Developed a distributed token-handover algorithm using DFS traversal and backtracking",
+              "Designed connectivity discovery and idempotent data-merging logic based on DISC packets",
+              "Implemented the LoRa packet structure and communication logic for drone-to-drone data delivery",
+              "Authored the Methodology section, implemented the system architecture in code, and conducted field connectivity tests",
             ],
             links: [
               {
