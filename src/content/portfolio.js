@@ -26,6 +26,11 @@ export const socialLinks = [
     icon: "instagram",
     label: "Instagram",
   },
+  {
+    href: "https://www.linkedin.com/in/jiho-pyo-17b6ba256/",
+    icon: "linkedin",
+    label: "LinkedIn",
+  },
 ];
 
 export const portfolioContent = {

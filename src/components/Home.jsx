@@ -1,6 +1,7 @@
 import "./Home.css";
 import githubLogo from "../assets/github_logo.png";
 import instagramLogo from "../assets/instagram_logo.png";
+import linkedinLogo from "../assets/linkedin.svg";
 import profileImg from "../assets/profile.jpg";
 import velogLogo from "../assets/velog_logo.png";
 import {
@@ -12,6 +13,7 @@ const socialIcons = {
   github: githubLogo,
   velog: velogLogo,
   instagram: instagramLogo,
+  linkedin: linkedinLogo,
 };
 
 export default function Home({ language }) {
