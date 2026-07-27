@@ -190,7 +190,7 @@ export const portfolioContent = {
             ],
           },
           {
-            title: "전북대학교 교과목 TA",
+            title: "전북대학교 전공교과목 TA",
             meta: "2025.03 - Present",
             bullets: [
               { label: "이산수학", meta: "2025.03 - 2025.06" },
@@ -211,7 +211,7 @@ export const portfolioContent = {
           },
           {
             title: "SW융합 멘토링 프로그램 알고리즘 멘토",
-            meta: "2025.09 - 2025.12 / 2026.03 - 2026.06",
+            meta: "2025.09 - 2026.06",
             bullets: [
               "재학생 대상 프로그래밍 기초, 자료구조 및 알고리즘 교육",
               "2025학년도 2학기, 2026학년도 1학기 연속 수행",
@@ -496,7 +496,7 @@ export const portfolioContent = {
             ],
           },
           {
-            title: "Teaching Assistant, JBNU",
+            title: "Major Course Teaching Assistant, JBNU",
             meta: "Mar 2025 - Present",
             bullets: [
               { label: "Discrete Mathematics", meta: "Mar 2025 - Jun 2025" },
@@ -517,7 +517,7 @@ export const portfolioContent = {
           },
           {
             title: "Algorithm Mentor, SW Convergence Mentoring Program",
-            meta: "Sep 2025 - Dec 2025 / Mar 2026 - Jun 2026",
+            meta: "Sep 2025 - Jun 2026",
             bullets: [
               "Taught programming fundamentals, data structures, and basic algorithms to undergraduate students",
               "Participated in both Fall 2025 and Spring 2026 programs",

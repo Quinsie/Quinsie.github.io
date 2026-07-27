@@ -58,7 +58,7 @@ function CardSection({ cards }) {
                     bullet
                   ) : (
                     <>
-                      {bullet.label} <span className="cv-inline-meta">{bullet.meta}</span>
+                      {bullet.label} | <span className="cv-inline-meta">{bullet.meta}</span>
                     </>
                   )}
                 </li>
