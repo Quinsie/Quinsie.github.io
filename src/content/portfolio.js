@@ -134,7 +134,12 @@ export const portfolioContent = {
               "광주 및 전남 지역 실증 및 한국전기안전공사 파일럿 테스트를 통한 현업 적용성 검증",
               "전국 단위 확장 검토 및 동일 주제의 전국민 AI 경진대회 본선 프로젝트 수행",
             ],
-            links: [],
+            links: [
+              {
+                label: "Github",
+                href: "https://github.com/Quinsie/ESafe",
+              },
+            ],
           },
           {
             title: "새로버스 - BIS 개선 프로젝트",
@@ -437,7 +442,12 @@ export const portfolioContent = {
               "Validated field applicability through regional testing in Gwangju and Jeonnam and a KESCO pilot test",
               "Explored nationwide expansion and advanced to the finals of a national AI competition on the same topic",
             ],
-            links: [],
+            links: [
+              {
+                label: "Github",
+                href: "https://github.com/Quinsie/ESafe",
+              },
+            ],
           },
           {
             title: "Saero Bus - BIS Improvement Project",
