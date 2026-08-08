@@ -331,7 +331,7 @@ export const portfolioContent = {
           {
             title: "전북대학교 공과대학 IT정보공학과",
             meta: "2021.03 - present",
-            subtitle: "3.97/4.5 | 재학",
+            subtitle: "3.97/4.5 | 종합석차 3/32 | 재학",
           },
           {
             title: "청주세광고등학교",
@@ -639,7 +639,7 @@ export const portfolioContent = {
           {
             title: "JBNU, B.S. in IT Information Engineering",
             meta: "Mar 2021 - Present",
-            subtitle: "3.97/4.5 | In Progress",
+            subtitle: "3.97/4.5 | Overall Rank: 3/32 | In Progress",
           },
           {
             title: "Cheongju Sekwang High School",
