@@ -143,6 +143,7 @@ export const portfolioContent = {
           },
           {
             title: "새로버스 - BIS 개선 프로젝트",
+            order: 2,
             meta: "개인 프로젝트 | 2025.03 - 2025.06",
             bullets: [
               "기존 BIS 도착 예상 오차를 줄이기 위한 데이터 기반 도착 예측 시스템 개발",
@@ -160,6 +161,7 @@ export const portfolioContent = {
           },
           {
             title: "DoQMate - 문서 기반 AI 챗봇 시스템",
+            order: 1,
               meta: "팀 프로젝트 | 2025.09 - 2025.12",
             bullets: [
               "PDF 중심 비정형 데이터 탐색을 위한 보안 특화 로컬 RAG 시스템 구축",
@@ -459,6 +461,7 @@ export const portfolioContent = {
           },
           {
             title: "Saero Bus - BIS Improvement Project",
+            order: 2,
             meta: "Personal Project | Mar 2025 - Jun 2025",
             bullets: [
               "Built a data-driven system to reduce errors in existing BIS bus arrival predictions",
@@ -476,6 +479,7 @@ export const portfolioContent = {
           },
           {
             title: "DoQMate - Document-Based AI Chatbot System",
+            order: 1,
               meta: "Team Project | Sep 2025 - Dec 2025",
             bullets: [
               "Built a local RAG pipeline for secure exploration of enterprise PDF documents",

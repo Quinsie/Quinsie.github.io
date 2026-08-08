@@ -45,7 +45,7 @@ function CardSection({ cards }) {
 
   return (
     <div className="cv-grid">
-      {cards.map((card) => (
+      {[...cards].sort((a, b) => (a.order ?? 0) - (b.order ?? 0)).map((card) => (
         <article className="cv-card" key={`${card.title}-${card.meta ?? ""}`}>
           <h3>{card.title}</h3>
           {card.meta ? <p className="cv-meta">{card.meta}</p> : null}
