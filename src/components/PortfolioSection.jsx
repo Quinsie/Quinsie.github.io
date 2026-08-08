@@ -58,7 +58,7 @@ function CardSection({ cards }) {
                     bullet
                   ) : (
                     <>
-                      {bullet.label} | <span className="cv-inline-meta">{bullet.meta}</span>
+                      {bullet.label}{bullet.separator ?? " | "}<span className="cv-inline-meta">{bullet.meta}</span>
                       {bullet.details?.length ? (
                         <ul className="cv-sublist">
                           {bullet.details.map((detail) => (

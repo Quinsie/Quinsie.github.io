@@ -189,8 +189,9 @@ export const portfolioContent = {
               "연구실 작업 환경 설정, 장비 및 계정 관리, 연구실 운영을 지원",
               "비디오 모아레 패턴 제거 및 화질 복원 연구 과제의 문헌 검토, 정기 세미나, 데이터 및 실험 환경 준비에 참여",
               {
-                label: "MRI 신경영상을 활용한 비전 AI 기반 치매 조기진단 연구",
-                meta: "2026 전북특구 전략기술 연구성과 사업화 지원 과제 참여 | 2026.04 - Present",
+                label: "MRI 신경영상을 활용한 비전 AI 기반 치매 조기진단 연구 - 2026 전북특구 전략기술 연구성과 사업화 지원 과제 참여",
+                meta: "(2026.04 - Present)",
+                separator: " ",
                 details: [
                   "ADNI 기반 MRI/임상 데이터 확보 및 연구용 데이터셋 구성 및 전처리 수행",
                 ],
@@ -503,8 +504,9 @@ export const portfolioContent = {
               "Manage lab hardware and development environments, including server-room operations",
               "Support workspace setup, equipment and account management, and lab operations",
               {
-                label: "Vision AI-based early diagnosis of dementia using MRI neuroimaging",
-                meta: "Participant in the 2026 Jeonbuk Special R&D Zone Strategic Technology Research Commercialization Support Project | Apr 2026 - Present",
+                label: "Vision AI-based early diagnosis of dementia using MRI neuroimaging - Participant in the 2026 Jeonbuk Special R&D Zone Strategic Technology Research Commercialization Support Project",
+                meta: "(Apr 2026 - Present)",
+                separator: " ",
                 details: [
                   "Acquired and preprocessed MRI and clinical data from ADNI to build a research dataset",
                 ],
