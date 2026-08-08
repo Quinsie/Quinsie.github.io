@@ -191,8 +191,10 @@ export const portfolioContent = {
               {
                 label: "MRI 신경영상을 활용한 비전 AI 기반 치매 조기진단 연구",
                 meta: "2026 전북특구 전략기술 연구성과 사업화 지원 과제 참여 | 2026.04 - Present",
+                details: [
+                  "ADNI 기반 MRI/임상 데이터 확보 및 연구용 데이터셋 구성 및 전처리 수행",
+                ],
               },
-              "ADNI 기반 MRI/임상 데이터 확보 및 연구용 데이터셋 구성 및 전처리 수행",
             ],
             links: [
               {
@@ -503,8 +505,10 @@ export const portfolioContent = {
               {
                 label: "Vision AI-based early diagnosis of dementia using MRI neuroimaging",
                 meta: "Participant in the 2026 Jeonbuk Special R&D Zone Strategic Technology Research Commercialization Support Project | Apr 2026 - Present",
+                details: [
+                  "Acquired and preprocessed MRI and clinical data from ADNI to build a research dataset",
+                ],
               },
-              "Acquired and preprocessed MRI and clinical data from ADNI to build a research dataset",
               "Participate in literature review, regular seminars, and data and experiment-environment preparation for video moiré-pattern removal and restoration research",
             ],
             links: [
