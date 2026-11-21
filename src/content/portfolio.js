@@ -91,6 +91,18 @@ export const portfolioContent = {
         type: "cards",
         cards: [
           {
+            title: "mmWave Radar-based Human Mesh Reconstruction",
+            meta: "연구 프로젝트 | 2026.08 – 2026.11",
+            bullets: [
+              "불완전한 mmWave 반사 관측과 기존 RPC-RT 특징 결합 방식의 기하학적 한계 분석",
+              "RPC로 인체 상태를 초기화하고, 이를 RT 관측과 Jacobian 계산의 공통 기하학적 기준으로 활용",
+              "인체 관절 및 표면 주변의 RT 특징을 추출하여 관절 변위와 국소 회전 증분 예측",
+              "Jacobian 기반 피팅과 회전 사전 정보로 형상, 위치, 관절 회전을 갱신하고 다음 관측에 반영",
+              "M4Human의 Cross-Subject 및 Cross-Action 전 지표에서 기존 비교 모델 대비 오차 감소",
+              "Ablation Study를 통해 인체 기반 RT 관측, 표면 샘플링, Jacobian 기반 갱신의 효과 검증",
+            ],
+          },
+          {
             title: "전기설비 안전점검 우선순위화를 위한 Cascade 기반 전기재해 위험 예측 모델 연구",
             meta: "2026 대한전기학회 하계학술대회",
             bullets: [
@@ -414,6 +426,18 @@ export const portfolioContent = {
         title: "Publications",
         type: "cards",
         cards: [
+          {
+            title: "mmWave Radar-based Human Mesh Reconstruction",
+            meta: "Research Project | Aug 2026 – Nov 2026",
+            bullets: [
+              "Analyzed incomplete mmWave observations and the geometric limitations of conventional RPC-RT feature fusion",
+              "Initialized human states from RPCs, using body geometry as a common reference for RT sampling and Jacobian computation",
+              "Predicted joint displacements and local rotation increments from RT features sampled around body joints and surfaces",
+              "Applied Jacobian-based fitting with learned rotation priors to update body parameters and guide subsequent observations",
+              "Outperformed evaluated baselines across all metrics on M4Human under both cross-subject and cross-action protocols",
+              "Validated body-guided RT observation, surface sampling, and Jacobian-based refinement through ablation studies",
+            ],
+          },
           {
             title: "A Cascade-Based Electrical Disaster Risk Prediction Model for Prioritizing Electrical Facility Safety Inspections",
             meta: "KIEE Summer Conference 2026",
