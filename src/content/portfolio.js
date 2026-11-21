@@ -99,6 +99,12 @@ export const portfolioContent = {
               "60일 이내 화재 예측에서 후보군 양성 건물 87.7% 보존 및 상위 10% Recall 61.8% 달성",
               "SHAP 기반 위험 요인 분석 및 현장 점검 의사결정 근거 제시",
             ],
+            links: [
+              {
+                label: "DBpia",
+                href: "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12938890",
+              },
+            ],
           },
           {
             title: "A Distributed Drone Weather System using LoRaWAN and LoRa Meshnet",
@@ -416,6 +422,12 @@ export const portfolioContent = {
                 "Designed a Cascade CatBoost model to prioritize inspection candidates from sparse fire data",
                 "Retained 87.7% of positive buildings and achieved 61.8% recall in the top 10% for 60-day fire prediction",
                 "Analyzed risk factors with SHAP to support field-inspection decisions",
+            ],
+            links: [
+              {
+                label: "DBpia",
+                href: "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12938890",
+              },
             ],
           },
           {
