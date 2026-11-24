@@ -95,7 +95,7 @@ export const portfolioContent = {
             meta: "연구 프로젝트 | 2026.08 – 2026.11",
             bullets: [
               "불완전한 mmWave 반사 관측과 기존 RPC-RT 특징 결합 방식의 기하학적 한계 분석",
-              "RPC로 인체 상태를 초기화하고, 이를 RT 관측과 Jacobian 계산의 공통 기하학적 기준으로 활용",
+              "RPC로 인체 상태를 초기화하고 이를 RT 관측과 Jacobian 계산의 공통 기하학적 기준으로 활용",
               "인체 관절 및 표면 주변의 RT 특징을 추출하여 관절 변위와 국소 회전 증분 예측",
               "Jacobian 기반 피팅과 회전 사전 정보로 형상, 위치, 관절 회전을 갱신하고 다음 관측에 반영",
               "M4Human의 Cross-Subject 및 Cross-Action 전 지표에서 기존 비교 모델 대비 오차 감소",
